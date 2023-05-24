@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+    body {
+        margin: 0;
+        background-color: #F5F5F5;
+    }
+
+
+
+/* header */
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .header {
+        background-color: #fff;
+    }
+
+    .header__wrapper {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .button__header {
+        font-family: 'Inter';
+        color: #15151F;
+        text-decoration: none;
+        border-radius: 38px;
+    }
+
+    .button__heaer:hover {
+        background-color: #f3e568;
+    }
+
+/* header end */
+
+/* block */
+
+.item__title{
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+/* block end */
+
+
+
+
+/* ========================================================================================================== */
+
+
+    @media (max-width: 375px) {
+
+    .header__wrapper {
+        height: 54px;
+        display: flex;
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 35px;
+    }
+
+    .header__block {
+        margin-right: 70px;
+    }
+
+    .sign-up {
+        background-color: #F5E341;
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        font-style: bold;
+        
+        padding: 12px, 24px, 12px, 24px;
+    }
+
+
+    .burger-menu {
+        width: 23px;
+        height: 18px;
+        padding-left: 5;
+    }
+
+    .login {
+        display: none;
+    }
+
+    /*  ==========================================================================  */
+
+    .block__item {
+        height: 732px;
+        z-index: 2;
+        background: radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(40.36% 95.9% at 50% 70.37%, #FF8642 0%, rgba(0, 0, 0, 0.43) 100%), #0E0E0E;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 35px 17px;
+        margin: 8px 8px;
+    }
+
+    .item__title{
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        width: 308px;
+        height: 72px;
+        margin: -12px 27px 0px 24px;
+        
+    }
+
+    .item__text {
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.6);
+        width: 262px;
+        height: 75px;
+        margin: 8px 73px 32px 24px;
+    }
+
+
+    /* Button ==========================*/
+
+
+    .button__start {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        padding: 16px 116px 16px 116px;
+        background-color: rgba(245, 227, 65, 1);
+        margin-bottom: 8px;
+    }
+
+    .button__google {
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(224, 225, 226, 1);
+        padding: 12px 72px;
+
+    }
+
+    .button {
+        color: #15151F;
+        text-decoration: none;
+        border-radius: 38px;
+
+    }
+
+    .google__logo {
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+        margin-right: 8px;
+      
+    }
+
+    
+    .button__start:hover {
+        background-color: rgb(241, 227, 98); 
+    }
+
+    .button__google:hover {
+        background-color: rgb(226, 230, 230);
+    }
+
+    /* ========================================================================================= */
+
+
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        height: 43px;
+        width: 104px;
+
+    }
+
+    .burger-menu {
+        padding: 3;
+    }
+
+
+
+    .sign-up {
+        background-color: #F5E341;
+        font-family: 'Inter';
+        font-weight: 600;
+        padding: 16px 24px;
+        margin-right: 12px;
+    }
+
+    .login {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        box-sizing: border-box;       
+        padding: 16px 24px;
+        gap: 8px;  
+        width: 85px;
+        height: 50px;
+        left: 468px;
+        top: 7px;     
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 38px;
+        margin: 7px 8px 7px 0px;
+
+    }
+
+}
