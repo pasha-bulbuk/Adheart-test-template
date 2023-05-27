@@ -2,7 +2,7 @@
 
     body {
         margin: 0;
-        background-color: #554b4b;
+        background-color: #ffffff;
     }
 
 
@@ -22,6 +22,30 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .header__list {
+        list-style-type: none;
+    }
+
+    .header__item {
+        display: inline;  
+    }
+
+    .header__link {
+
+        height: 18px;
+        text-decoration: none;
+        color: rgba(122, 122, 122, 1);
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        margin-left: 24px;
+
+
     }
 
     .button__header {
@@ -102,8 +126,13 @@
 /* ========================================================================================================== */
 
 
-@media screen and (min-width: 375px) and (max-width: 502px) {
-
+@media screen and (min-width: 369px) and (max-width: 502px) {
+    
+    .header__nav,
+    .header__language {
+        display: none;
+    }
+        
     .header__wrapper {
         height: 54px;
         display: flex;
@@ -136,6 +165,8 @@
         height: 18px;
         margin-right: 3px;
     }
+
+
 
     .login {
         display: none;
@@ -231,12 +262,18 @@
 
     /* Header Start */
 
+    .header__language,
+    .header__nav {
+        display: none;
+    }
+
     .header__wrapper {
         margin: 0 13px;
         height: 64px;
     }
     
     .logo {
+
         height: 43px;
         width: 104px;
 
@@ -362,6 +399,11 @@
 
     /* Header Start */
 
+    .header__language,
+    .header__nav {
+        display: none;
+    }
+
     .header__wrapper {
         margin: 0 20px;
         height: 64px;
@@ -482,5 +524,431 @@
   
     
 
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 945px) {
+    
+    .header__nav {
+        display: none;
+    }
+
+    .header__wrapper {
+        margin: 0 13px;
+        height: 64px;
+    }
+    
+    .logo {
+        
+        height: 43px;
+        width: 104px;
+        margin-right: 24px;
+
+        position: absolute;
+        left: 24px;
+        top: 11px;
+
+    }
+
+    .header__list {
+        position: absolute;
+        left: 90px;
+        top: 8px;
+    }
+
+    .header__button {
+        position: absolute;
+        right: 56px;
+    }
+
+    .sign-up {
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+    }
+
+    .login {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+        border: 1px solid #C1C1C1;
+    }
+
+
+
+    .language {
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        position: absolute;
+        right: 328px;
+        top: 23px;
+    }
+
+
+
+/* =============================== */
+
+    .block__item {
+        height: 1016px;
+        width: 98.4%;
+        top: 62px;
+        border-radius: 38px;
+        margin-top: 14px;
+
+        position: relative;
+        top: 0;
+        left: 0.8%;
+    }
+
+    /* ===========  */
+
+    .item__title {
+
+        width: 545px;
+
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        padding: 56px 64px 12px 64px;
+
+
+    }
+
+    .item__text {
+
+        width: 429px;
+        height: 84px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        padding: 0 64px 48px 64px;
+
+    }
+
+    .button__google {
+        padding: 20px 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        text-align: left;
+
+    }
+
+    .google__logo {
+
+        height: 32px;
+        width: 32px;
+        vertical-align: middle;
+        margin-right: 8px;
+      
+    }
+
+    .button__start {
+        padding: 20px 40px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0px 15px 0px 64px;
+    }
+
+
+}
+
+@media screen and (min-width: 945px) and (max-width: 1154px) {
+
+    .header__wrapper {
+        margin: 0 13px;
+        height: 64px;
+    }
+    
+    .logo {
+        
+        height: 43px;
+        width: 104px;
+        margin-right: 24px;
+
+        position: absolute;
+        left: 24px;
+        top: 11px;
+
+    }
+
+    .header__list {
+        position: absolute;
+        left: 90px;
+        top: 8px;
+    }
+
+    .header__button {
+        position: absolute;
+        right: 24px;
+    }
+
+    .sign-up {
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+    }
+
+    .login {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+        border: 1px solid #C1C1C1;
+    }
+
+
+
+    .burger-menu {
+        display: none;
+    }
+
+    .language {
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        position: absolute;
+        right: 296px;
+        top: 23px;
+    }
+
+
+
+/* =============================== */
+
+    .block__item {
+        height: 1016px;
+        width: 98.4%;
+        top: 62px;
+        border-radius: 38px;
+        margin-top: 24px;
+
+        position: relative;
+        top: 0;
+        left: 0.8%;
+    }
+
+    /* ===========  */
+
+    .item__title {
+
+        width: 545px;
+
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        padding: 56px 64px 12px 64px;
+
+
+    }
+
+    .item__text {
+
+        width: 429px;
+        height: 84px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        padding: 0 64px 48px 64px;
+
+    }
+
+    .button__google {
+        padding: 20px 24px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        text-align: left;
+
+    }
+
+    .google__logo {
+
+        height: 32px;
+        width: 32px;
+        vertical-align: middle;
+        margin-right: 8px;
+      
+    }
+
+    .button__start {
+        padding: 20px 40px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0px 15px 0px 64px;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 1153px) {
+
+    .header__wrapper {
+        margin: 0 13px;
+        height: 64px;
+    }
+
+    .logo {
+    
+        height: 43px;
+        width: 104px;
+        margin-right: 24px;
+
+        position: absolute;
+        left: 120px;
+        top: 11px;
+
+    }   
+
+    .header__list {
+        position: absolute;
+        left: 208px;
+        top: 8px;
+    }
+
+    .header__button {
+        position: absolute;
+        right: 121px;
+    }
+
+    .sign-up {
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+    }
+
+    .login {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        padding: 16px 24px;
+        border: 1px solid #C1C1C1;
+    }
+
+
+
+    .burger-menu {
+        display: none;
+    }
+
+    .language {
+        border: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+
+        position: absolute;
+        right: 393px;
+        top: 23px;
+    }
+
+    /* =========== */
+
+    .block__item {
+        height: 700px;
+        width: 98.4%;
+        top: 62px;
+        border-radius: 38px;
+        margin-top: 5px;
+
+        position: relative;
+        top: 0;
+        left: 0.8%;
+    }
+
+    .item__title {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 54px;
+        width: 633px;
+        height: 108px;
+
+        padding: 136px 0px  23px 109px;
+    }
+
+    .item__text {
+        width: 429px;
+        height: 84px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+
+        padding: 0 0 23px 109px;
+    }
+
+    .item__button {
+        position: relative;
+        bottom: -24px;
+    }   
+
+    .button__google {
+        padding: 20px 24px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .button__start {
+        padding: 20px 40px;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0px 15px 0px 109px;
+
+    }
+
+    .google__logo {
+
+        height: 32px;
+        width: 32px;
+        vertical-align: middle;
+        margin-right: 8px;
+      
+    }
 
 }
