@@ -127,12 +127,12 @@
 
 
 @media screen and (min-width: 369px) and (max-width: 502px) {
-    
-    .header__nav,
-    .header__language {
+
+     .language {
         display: none;
-    }
-        
+     }
+
+
     .header__wrapper {
         height: 54px;
         display: flex;
@@ -160,17 +160,162 @@
     }
 
 
-    .burger-menu {
+    .burger{
+
+        position: absolute;
+        right: 18px;
+        top: 18px;
+
         width: 23px;
         height: 18px;
-        margin-right: 3px;
+        cursor: pointer;
+        background: url(../img/bg-menu.svg) no-repeat center;
+        
     }
 
-
-
-    .login {
+    .nav__menu {
         display: none;
     }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__item {
+        display: none;
+    }
+
+    .language {
+        display: none;
+     }
+
+     .login {
+        display: none;
+    }
+
+    .open .login:hover {
+        background: #C1C1C1;
+    }
+
+    .backgruond__main {
+        display: none;
+    }
+
+
+    .open .sign-up {
+        display: block;
+        padding: 16px 114px;
+        background: rgba(245, 227, 65, 1);
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 350px;
+        right: -26px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .login {
+        display: block;
+        padding: 16px 145px;
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 430px;
+        right: 24px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .language {
+        border: 1px solid #C1C1C1;
+        border-radius: 12px;
+        padding: 16px 217px 16px 17px;
+        display: block;
+        z-index: 8;
+        position: absolute;
+        top: 285px;
+        right: 24px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+     }
+
+     .open .backgruond__main {
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 22, 0.49);
+        z-index: 1;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        transition: transform .2s;
+        display: block;
+     }
+
+
+    .open .nav__menu {
+        width: 345px;
+        height: 422px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        transition: transform .2s;
+        display: block;
+        
+    }
+
+    .open .header__nav {
+        position: absolute;
+        right: 15px;
+        top: 80px;
+        z-index: 5;
+        transition: transform .2s;
+        display: block;
+    }
+
+    .open .header__item {
+        display: block;
+        border-bottom: 1px solid #e0e1e2;
+        line-height: 42px;
+        width: 345px;
+        height: 42px;
+        transition: transform .2s;
+        display: block;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .header__link {
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+
+    .open .burger{
+        background: url(../img/close.svg) no-repeat center;
+
+    }
+
+
 
     /*  ==========================================================================  */
 
@@ -262,10 +407,145 @@
 
     /* Header Start */
 
-    .header__language,
+    .nav__menu {
+        display: none;
+    }
+
     .header__nav {
         display: none;
     }
+
+    .header__item {
+        display: none;
+    }
+
+    .language {
+        display: none;
+     }
+
+
+    .open .login:hover {
+        background: #C1C1C1;
+    }
+
+    .backgruond__main {
+        display: none;
+    }
+
+
+    .open .sign-up {
+        display: block;
+        padding: 16px 114px;
+        background: rgba(245, 227, 65, 1);
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 335px;
+        right: -52px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .login {
+        display: block;
+        padding: 16px 145px;
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 400px;
+        right: -42px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .language {
+        border: 1px solid #C1C1C1;
+        border-radius: 12px;
+        padding: 16px 217px 16px 17px;
+        display: block;
+        z-index: 8;
+        position: absolute;
+        top: 295px;
+        right: 24px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+     }
+
+     .open .backgruond__main {
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 22, 0.49);
+        z-index: 1;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        transition: transform .2s;
+        display: block;
+     }
+
+
+    .open .nav__menu {
+        width: 345px;
+        height: 422px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        right: 15px;
+        transition: transform .2s;
+        display: block;
+        
+    }
+
+    .open .header__nav {
+        position: absolute;
+        right: 15px;
+        top: 80px;
+        z-index: 5;
+        transition: transform .2s;
+        display: block;
+    }
+
+    .open .header__item {
+        display: block;
+        border-bottom: 1px solid #e0e1e2;
+        line-height: 42px;
+        width: 345px;
+        height: 42px;
+        transition: transform .2s;
+        display: block;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .header__link {
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+
+    .open .burger{
+        background: url(../img/close.svg) no-repeat center;
+
+    }
+
 
     .header__wrapper {
         margin: 0 13px;
@@ -301,20 +581,26 @@
         font-style: normal;
         box-sizing: border-box;       
         padding: 16px 24px;
-        gap: 8px;  
-        width: 85px;
-        height: 50px;
-        left: 468px;
-        top: 7px;     
+        gap: 8px;      
         background: #FFFFFF;
         border: 1px solid #C1C1C1;
         border-radius: 38px;
-        margin: 7px 8px 7px 0px; 
+        position: absolute;
+        top: -17px;
+        right: 175px;
     }
 
-    .burger-menu {
-        margin-right: 9px;
+    .burger{
 
+        position: absolute;
+        right: 25px;
+        top: 22px;
+
+        width: 23px;
+        height: 18px;
+        cursor: pointer;
+        background: url(../img/bg-menu.svg) no-repeat center;
+        
     }
 
     /* Header End */
@@ -395,14 +681,153 @@
 }
 
 
+
+
 @media screen and (min-width: 639px) and (max-width: 768px) {
 
     /* Header Start */
 
-    .header__language,
+    .nav__menu {
+        display: none;
+    }
+
     .header__nav {
         display: none;
     }
+
+    .header__item {
+        display: none;
+    }
+
+    .language {
+        display: none;
+     }
+
+
+    .open .login:hover {
+        background: #C1C1C1;
+    }
+
+    .backgruond__main {
+        display: none;
+    }
+
+
+    .open .sign-up {
+        display: block;
+        padding: 21px 63.5px;
+        background: rgba(245, 227, 65, 1);
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 420px;
+        right: 120px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .login {
+        display: block;
+        padding: 20px 54.5px;
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 420px;
+        right: -23px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .language {
+        border: 1px solid #C1C1C1;
+        border-radius: 12px;
+        padding: 16px 260px 16px 16px;
+        display: block;
+        z-index: 8;
+        position: absolute;
+        top: 360px;
+        right: 40px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+     }
+
+     .open .backgruond__main {
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 22, 0.49);
+        z-index: 1;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        transition: transform .2s;
+        display: block;
+     }
+
+
+    .open .nav__menu {
+        width: 436px;
+        height: 471px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        right: 19px;
+        transition: transform .2s;
+        display: block;
+        
+    }
+
+    .open .header__nav {
+        position: absolute;
+        right: 19px;
+        top: 80px;
+        z-index: 5;
+        transition: transform .2s;
+        display: block;
+    }
+
+    .open .header__item {
+        display: block;
+        border-bottom: 1px solid #e0e1e2;
+        line-height: 60px;
+        width: 436px;
+        height: 60px;
+        transition: transform .2s;
+        display: block;
+        background: rgba(255, 255, 255, 1);
+
+
+    }
+
+    .header__link {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+
+    .open .burger{
+        background: url(../img/close.svg) no-repeat center;
+
+    }
+
 
     .header__wrapper {
         margin: 0 20px;
@@ -428,7 +853,7 @@
         font-family: 'Inter';
         font-weight: 600;
         margin-right: 12px;
-        padding: 16px 24px;
+        padding: 17px 24px;
     }
 
 
@@ -438,19 +863,21 @@
         box-sizing: border-box;       
         padding: 16px 24px;
         gap: 8px;  
-        width: 85px;
-        height: 50px;
-        left: 468px;
         top: 7px;     
         background: #FFFFFF;
         border: 1px solid #C1C1C1;
         border-radius: 38px;
-        margin: 7px 8px 7px 0px; 
     }
 
-    .burger-menu {
-        margin-right: 9px;
+    .burger {
+        position: absolute;
+        right: 28px;
+        top: 20px;
 
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background: url(../img/bg-menu.svg) no-repeat center;
     }
 
     /* Header End */
@@ -529,9 +956,155 @@
 
 @media screen and (min-width: 769px) and (max-width: 945px) {
     
+
+    .burger {
+        position: absolute;
+        right: 22px;
+        top: 20px;
+
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background: url(../img/bg-menu.svg) no-repeat center;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
     .header__nav {
         display: none;
     }
+
+    .header__item {
+        display: none;
+    }
+
+    .open .login:hover {
+        background: #C1C1C1;
+    }
+
+    .backgruond__main {
+        display: none;
+    }
+
+
+    .open .sign-up {
+        display: block;
+        padding: 26px 63.5px;
+        background: rgba(245, 227, 65, 1);
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 420px;
+        right: 148px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .login {
+        display: block;
+        padding: 25px 54.5px;
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        border-radius: 38px;
+        z-index: 7;
+        position: absolute;
+        top: 420px;
+        right: -13px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px
+    }
+
+    .open .language {
+        border: 1px solid #C1C1C1;
+        border-radius: 12px;
+        padding: 16px 260px 16px 16px;
+        display: block;
+        z-index: 8;
+        position: absolute;
+        top: 370px;
+        right: 45px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+     }
+
+
+     .open .backgruond__main {
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 22, 0.49);
+        z-index: 1;
+        position: absolute;
+        top: 60px;
+        right: 1px;
+        transition: transform .2s;
+        display: block;
+     }
+
+
+    .open .nav__menu {
+        width: 436px;
+        height: 471px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        right: 19px;
+        transition: transform .2s;
+        display: block;
+        
+    }
+
+    .open .header__nav {
+        position: absolute;
+        right: 585px;
+        top: 80px;
+        z-index: 5;
+        transition: transform .2s;
+        display: block;
+    }
+
+    .open .header__item {
+        display: block;
+        border-bottom: 1px solid #e0e1e2;
+        line-height: 60px;
+        width: 436px;
+        height: 60px;
+        transition: transform .2s;
+        display: block;
+        background: rgba(255, 255, 255, 1);
+
+
+    }
+
+    .header__link {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.015em;
+        text-align: left;
+    }
+
+    .open .burger{
+        background: url(../img/close.svg) no-repeat center;
+
+    }
+
 
     .header__wrapper {
         margin: 0 13px;
@@ -670,7 +1243,7 @@
 
 }
 
-@media screen and (min-width: 945px) and (max-width: 1154px) {
+@media screen and (min-width: 946px) and (max-width: 1154px) {
 
     .header__wrapper {
         margin: 0 13px;
