@@ -1,1527 +1,1401 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap");
 
-    body {
-        margin: 0;
-        background-color: #ffffff;
-    }
-
-
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
 
 /* header */
 
-    .container {
-        margin: 0 auto;
-    }
+.container {
+  margin: 0 auto;
+}
 
-    .header {
-        background-color: #fff;
-    }
+.header {
+  background-color: #fff;
+}
 
-    .header__wrapper {
-        height: 64px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.header__wrapper {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .header__list {
-        list-style-type: none;
-    }
+.header__list {
+  list-style-type: none;
+}
 
-    .header__item {
-        display: inline;  
-    }
+.header__item {
+  display: inline;
+}
 
-    .header__link {
+.header__link {
+  height: 18px;
+  text-decoration: none;
+  color: rgba(122, 122, 122, 1);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin-left: 24px;
+}
 
-        height: 18px;
-        text-decoration: none;
-        color: rgba(122, 122, 122, 1);
-        font-family: 'Inter';
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        margin-left: 24px;
+.button__header {
+  font-family: "Inter";
+  color: #15151f;
+  text-decoration: none;
+  border-radius: 38px;
+}
 
+.sign-up {
+  background-color: rgba(245, 227, 65, 1);
+}
 
-    }
+.sign-up:hover {
+  background-color: #f3e568;
+}
 
-    .button__header {
-        font-family: 'Inter';
-        color: #15151F;
-        text-decoration: none;
-        border-radius: 38px;
-    }
-
-    .sign-up {
-       background-color: rgba(245, 227, 65, 1);
-    }
-
-    .sign-up:hover {
-        background-color: #f3e568;
-    }
-
-    .login:hover {
-        background-color: #ececec;
-    }
+.login:hover {
+  background-color: #ececec;
+}
 
 /* header end */
 
 /* block */
 
-.item__title{
-    font-family: 'Inter';
-    text-align: left;
-    color: #FFFFFF;
+.item__title {
+  font-family: "Inter";
+  text-align: left;
+  color: #ffffff;
 }
 
 .item__text {
-    color: rgba(224, 225, 226, 1);
-    font-family: 'Inter';
+  color: rgba(224, 225, 226, 1);
+  font-family: "Inter";
 }
 
 .block__item {
-    background: radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(40.36% 95.9% at 50% 70.37%, #FF8642 0%, rgba(0, 0, 0, 0.43) 100%), #0E0E0E;
+  background: radial-gradient(
+        29.75% 70.68% at 73.76% 95.59%,
+        rgba(255, 235, 51, 0.52) 0%,
+        rgba(0, 0, 0, 0.2236) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        33.62% 79.88% at 51.09% 86.4%,
+        rgba(255, 134, 66, 0.66) 0%,
+        rgba(0, 0, 0, 0.2838) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        30.14% 71.61% at 68.54% 94.66%,
+        rgba(106, 103, 218, 0.2) 0%,
+        rgba(0, 0, 0, 0.086) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        29.17% 69.32% at 31.85% 96.96%,
+        rgba(97, 71, 255, 0.73) 0%,
+        rgba(0, 0, 0, 0.3139) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+      40.36% 95.9% at 50% 70.37%,
+      #ff8642 0%,
+      rgba(0, 0, 0, 0.43) 100%
+    ),
+    #0e0e0e;
 }
-
 
 /*  Button start  */
 
 .button {
-    color: #15151F;
-    text-decoration: none;
-    border-radius: 38px;
+  color: #15151f;
+  text-decoration: none;
+  border-radius: 38px;
 }
 
-
 .button__start {
-    font-family: 'Inter';
-    text-align: left;
-    background-color: rgba(245, 227, 65, 1);
+  font-family: "Inter";
+  text-align: left;
+  background-color: rgba(245, 227, 65, 1);
 }
 
 .button__google {
-    font-family: 'Inter';
-    text-align: left;
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(224, 225, 226, 1);
+  font-family: "Inter";
+  text-align: left;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(224, 225, 226, 1);
 }
 
-
 .button__start:hover {
-    background-color: rgb(241, 227, 98); 
+  background-color: rgb(241, 227, 98);
 }
 
 .button__google:hover {
-    background-color: rgb(226, 230, 230);
+  background-color: rgb(226, 230, 230);
 }
 
 /* block end */
 
-
-
-
 /* ========================================================================================================== */
 
-
 @media screen and (min-width: 369px) and (max-width: 502px) {
+  .language {
+    display: none;
+  }
 
-     .language {
-        display: none;
-     }
+  .header__wrapper {
+    height: 54px;
+    display: flex;
+    padding: 0 15px;
+  }
 
+  .logo {
+    width: 85px;
+    height: 35px;
+  }
 
-    .header__wrapper {
-        height: 54px;
-        display: flex;
-        padding: 0 15px;
-    }
+  .header__block {
+    margin-right: 70px;
+  }
 
-    .logo {
-        width: 85px;
-        height: 35px;
-    }
+  .sign-up {
+    font-family: "Inter";
+    font-weight: 600;
+    padding: 12px 24px;
 
-    .header__block {
-        margin-right: 70px;
-    }
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 51px;
+  }
 
-    .sign-up {
-        font-family: 'Inter';
-        font-weight: 600;
-        padding: 12px 24px;
+  .burger {
+    position: absolute;
+    right: 18px;
+    top: 18px;
 
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin: 5px 51px;
-    }
+    width: 23px;
+    height: 18px;
+    cursor: pointer;
+    background: url(../img/bg-menu.svg) no-repeat center;
+  }
 
+  .nav__menu {
+    display: none;
+  }
 
-    .burger{
+  .header__nav {
+    display: none;
+  }
 
-        position: absolute;
-        right: 18px;
-        top: 18px;
+  .header__item {
+    display: none;
+  }
 
-        width: 23px;
-        height: 18px;
-        cursor: pointer;
-        background: url(../img/bg-menu.svg) no-repeat center;
-        
-    }
+  .language {
+    display: none;
+  }
 
-    .nav__menu {
-        display: none;
-    }
+  .login {
+    display: none;
+  }
 
-    .header__nav {
-        display: none;
-    }
+  .open .login:hover {
+    background: #c1c1c1;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .backgruond__main {
+    display: none;
+  }
 
-    .language {
-        display: none;
-     }
+  .open .sign-up {
+    display: block;
+    padding: 16px 114px;
+    background: rgba(245, 227, 65, 1);
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 350px;
+    right: -26px;
 
-     .login {
-        display: none;
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-    .open .login:hover {
-        background: #C1C1C1;
-    }
+  .open .login {
+    display: block;
+    padding: 16px 145px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 430px;
+    right: 24px;
 
-    .backgruond__main {
-        display: none;
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
+  .open .language {
+    border: 1px solid #c1c1c1;
+    border-radius: 12px;
+    padding: 16px 217px 16px 17px;
+    display: block;
+    z-index: 8;
+    position: absolute;
+    top: 285px;
+    right: 24px;
 
-    .open .sign-up {
-        display: block;
-        padding: 16px 114px;
-        background: rgba(245, 227, 65, 1);
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 350px;
-        right: -26px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .backgruond__main {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 22, 0.49);
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-    .open .login {
-        display: block;
-        padding: 16px 145px;
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 430px;
-        right: 24px;
+  .open .nav__menu {
+    width: 345px;
+    height: 422px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .header__nav {
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    z-index: 5;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-    .open .language {
-        border: 1px solid #C1C1C1;
-        border-radius: 12px;
-        padding: 16px 217px 16px 17px;
-        display: block;
-        z-index: 8;
-        position: absolute;
-        top: 285px;
-        right: 24px;
+  .open .header__item {
+    display: block;
+    border-bottom: 1px solid #e0e1e2;
+    line-height: 42px;
+    width: 345px;
+    height: 42px;
+    transition: transform 0.2s;
+    display: block;
+    background: rgba(255, 255, 255, 1);
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
-     }
+  .header__link {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-     .open .backgruond__main {
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 10, 22, 0.49);
-        z-index: 1;
-        position: absolute;
-        top: 60px;
-        right: 1px;
-        transition: transform .2s;
-        display: block;
-     }
+  .open .burger {
+    background: url(../img/close.svg) no-repeat center;
+  }
 
+  /*  ==========================================================================  */
 
-    .open .nav__menu {
-        width: 345px;
-        height: 422px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 12px;
-        z-index: 2;
-        position: absolute;
-        top: 80px;
-        right: 15px;
-        transition: transform .2s;
-        display: block;
-        
-    }
+  .block__item {
+    height: 732px;
+    width: 96.8%;
+    top: 62px;
+    border-radius: 38px;
+    margin-top: 8px;
 
-    .open .header__nav {
-        position: absolute;
-        right: 15px;
-        top: 80px;
-        z-index: 5;
-        transition: transform .2s;
-        display: block;
-    }
+    position: relative;
+    top: 0;
+    left: 1.6%;
+  }
 
-    .open .header__item {
-        display: block;
-        border-bottom: 1px solid #e0e1e2;
-        line-height: 42px;
-        width: 345px;
-        height: 42px;
-        transition: transform .2s;
-        display: block;
-        background: rgba(255, 255, 255, 1);
-    }
+  .item__title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-align: left;
 
-    .header__link {
-        font-family: 'Inter';
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-    }
+    padding: 24px 27px 0px 24px;
+  }
 
-    .open .burger{
-        background: url(../img/close.svg) no-repeat center;
+  .item__text {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+    width: 262px;
+    height: 75px;
+    padding: 8px 73px 32px 24px;
+  }
 
-    }
+  /* Button ==========================*/
 
+  .button {
+    margin: 0 24px;
+  }
 
+  .button__start {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    padding: 16px 116px 16px 116px;
+  }
 
-    /*  ==========================================================================  */
+  .button__google {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    padding: 16px 71px 16px 70.04px;
 
-    .block__item {
-        height: 732px;
-        width: 96.8%;
-        top: 62px;
-        border-radius: 38px;
-        margin-top: 8px;
+    position: relative;
+    bottom: -40px;
+    left: 1px;
+  }
 
-        position: relative;
-        top: 0;
-        left: 1.6%;
+  .google__logo {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-    }
-
-    .item__title {
- 
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 36px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        
-        padding: 24px 27px 0px 24px;
-        
-    }
-
-    .item__text {
-        font-family: 'Inter';
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 25px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        color: rgba(255, 255, 255, 0.6);
-        width: 262px;
-        height: 75px;
-        padding: 8px 73px 32px 24px;
-    }
-
-
-    /* Button ==========================*/
-
-    .button {
-        margin: 0 24px;
-    }
-
-    .button__start {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 16px;
-        letter-spacing: -0.015em;
-        padding: 16px 116px 16px 116px;
-
-        
-    }
-
-    .button__google {
-
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 16px;
-        letter-spacing: -0.015em;
-        padding: 16px 71px 16px 70.04px;
-
-        position: relative;
-        bottom: -40px;
-        left: 1px;
-
-    }
-
-    .google__logo {
-        height: 24px;
-        width: 24px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
-    
-
-    /* ========================================================================================= */
-
-
+  /* ========================================================================================= */
 }
 
 @media screen and (min-width: 503px) and (max-width: 638px) {
+  /* Header Start */
 
-    /* Header Start */
+  .nav__menu {
+    display: none;
+  }
 
-    .nav__menu {
-        display: none;
-    }
+  .header__nav {
+    display: none;
+  }
 
-    .header__nav {
-        display: none;
-    }
+  .header__item {
+    display: none;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .language {
+    display: none;
+  }
 
-    .language {
-        display: none;
-     }
+  .open .login:hover {
+    background: #c1c1c1;
+  }
 
+  .backgruond__main {
+    display: none;
+  }
 
-    .open .login:hover {
-        background: #C1C1C1;
-    }
+  .open .sign-up {
+    display: block;
+    padding: 16px 114px;
+    background: rgba(245, 227, 65, 1);
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 335px;
+    right: -52px;
 
-    .backgruond__main {
-        display: none;
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
+  .open .login {
+    display: block;
+    padding: 16px 145px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 400px;
+    right: -42px;
 
-    .open .sign-up {
-        display: block;
-        padding: 16px 114px;
-        background: rgba(245, 227, 65, 1);
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 335px;
-        right: -52px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .language {
+    border: 1px solid #c1c1c1;
+    border-radius: 12px;
+    padding: 16px 217px 16px 17px;
+    display: block;
+    z-index: 8;
+    position: absolute;
+    top: 295px;
+    right: 24px;
 
-    .open .login {
-        display: block;
-        padding: 16px 145px;
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 400px;
-        right: -42px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .backgruond__main {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 22, 0.49);
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-    .open .language {
-        border: 1px solid #C1C1C1;
-        border-radius: 12px;
-        padding: 16px 217px 16px 17px;
-        display: block;
-        z-index: 8;
-        position: absolute;
-        top: 295px;
-        right: 24px;
+  .open .nav__menu {
+    width: 345px;
+    height: 422px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
-     }
+  .open .header__nav {
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    z-index: 5;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-     .open .backgruond__main {
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 10, 22, 0.49);
-        z-index: 1;
-        position: absolute;
-        top: 60px;
-        right: 1px;
-        transition: transform .2s;
-        display: block;
-     }
+  .open .header__item {
+    display: block;
+    border-bottom: 1px solid #e0e1e2;
+    line-height: 42px;
+    width: 345px;
+    height: 42px;
+    transition: transform 0.2s;
+    display: block;
+    background: rgba(255, 255, 255, 1);
+  }
 
+  .header__link {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    .open .nav__menu {
-        width: 345px;
-        height: 422px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 12px;
-        z-index: 2;
-        position: absolute;
-        top: 80px;
-        right: 15px;
-        transition: transform .2s;
-        display: block;
-        
-    }
+  .open .burger {
+    background: url(../img/close.svg) no-repeat center;
+  }
 
-    .open .header__nav {
-        position: absolute;
-        right: 15px;
-        top: 80px;
-        z-index: 5;
-        transition: transform .2s;
-        display: block;
-    }
+  .header__wrapper {
+    margin: 0 13px;
+    height: 64px;
+  }
 
-    .open .header__item {
-        display: block;
-        border-bottom: 1px solid #e0e1e2;
-        line-height: 42px;
-        width: 345px;
-        height: 42px;
-        transition: transform .2s;
-        display: block;
-        background: rgba(255, 255, 255, 1);
-    }
+  .logo {
+    height: 43px;
+    width: 104px;
+  }
 
-    .header__link {
-        font-family: 'Inter';
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-    }
+  .header__button {
+    position: absolute;
+    right: 0;
 
-    .open .burger{
-        background: url(../img/close.svg) no-repeat center;
+    margin: 7px 64px;
+  }
 
-    }
+  .sign-up {
+    font-family: "Inter";
+    font-weight: 600;
+    margin-right: 12px;
+    padding: 16px 24px;
+  }
 
+  .login {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+    position: absolute;
+    top: -17px;
+    right: 175px;
+  }
 
-    .header__wrapper {
-        margin: 0 13px;
-        height: 64px;
-    }
-    
-    .logo {
+  .burger {
+    position: absolute;
+    right: 25px;
+    top: 22px;
 
-        height: 43px;
-        width: 104px;
+    width: 23px;
+    height: 18px;
+    cursor: pointer;
+    background: url(../img/bg-menu.svg) no-repeat center;
+  }
 
-    }
+  /* Header End */
 
-    .header__button {
+  /* Block start */
+  .block__item {
+    height: 732px;
+    width: 96.8%;
+    top: 62px;
+    border-radius: 38px;
+    margin-top: 8px;
 
-        position: absolute;
-        right: 0;
+    position: relative;
+    top: 0;
+    left: 1.6%;
+  }
 
-        margin: 7px 64px;
+  .item__title {
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 56px 64px 12px 64px;
+  }
 
-    }
+  .item__text {
+    width: 330px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    padding: 0 64px 48px 64px;
+  }
 
-    .sign-up {
-        font-family: 'Inter';
-        font-weight: 600;
-        margin-right: 12px;
-        padding: 16px 24px;
-    }
+  .button__google {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
 
+    position: absolute;
+    left: 64px;
+    top: 310px;
+  }
 
-    .login {
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        box-sizing: border-box;       
-        padding: 16px 24px;
-        gap: 8px;      
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-        position: absolute;
-        top: -17px;
-        right: 175px;
-    }
+  .google__logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-    .burger{
-
-        position: absolute;
-        right: 25px;
-        top: 22px;
-
-        width: 23px;
-        height: 18px;
-        cursor: pointer;
-        background: url(../img/bg-menu.svg) no-repeat center;
-        
-    }
-
-    /* Header End */
-
-    /* Block start */
-    .block__item {
-
-        height: 732px;
-        width: 96.8%;
-        top: 62px;
-        border-radius: 38px;
-        margin-top: 8px;
-
-        position: relative;
-        top: 0;
-        left: 1.6%;
-
-
-    }
-
-
-    .item__title {
-
-        font-size: 35px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        padding: 56px 64px 12px 64px;
-    }
-
-    .item__text {
-
-        width: 330px;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        padding: 0 64px 48px 64px;
-        
-
-    }
-
-
-
-    .button__google {
-        padding: 20px 24px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-
-        position: absolute;
-        left: 64px;
-        top: 310px;
-
-    }
-
-    .google__logo {
-
-        height: 32px;
-        width: 32px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
-    .button__start {
-        padding: 20px 40px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0px 15px 0px 64px;
-    }
-
+  .button__start {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 15px 0px 64px;
+  }
 }
 
-
-
-
 @media screen and (min-width: 639px) and (max-width: 768px) {
+  /* Header Start */
 
-    /* Header Start */
+  .nav__menu {
+    display: none;
+  }
 
-    .nav__menu {
-        display: none;
-    }
+  .header__nav {
+    display: none;
+  }
 
-    .header__nav {
-        display: none;
-    }
+  .header__item {
+    display: none;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .language {
+    display: none;
+  }
 
-    .language {
-        display: none;
-     }
+  .open .login:hover {
+    background: #c1c1c1;
+  }
 
+  .backgruond__main {
+    display: none;
+  }
 
-    .open .login:hover {
-        background: #C1C1C1;
-    }
+  .open .sign-up {
+    display: block;
+    padding: 21px 63.5px;
+    background: rgba(245, 227, 65, 1);
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 420px;
+    right: 120px;
 
-    .backgruond__main {
-        display: none;
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
+  .open .login {
+    display: block;
+    padding: 20px 54.5px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 420px;
+    right: -23px;
 
-    .open .sign-up {
-        display: block;
-        padding: 21px 63.5px;
-        background: rgba(245, 227, 65, 1);
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 420px;
-        right: 120px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .language {
+    border: 1px solid #c1c1c1;
+    border-radius: 12px;
+    padding: 16px 260px 16px 16px;
+    display: block;
+    z-index: 8;
+    position: absolute;
+    top: 360px;
+    right: 40px;
 
-    .open .login {
-        display: block;
-        padding: 20px 54.5px;
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 420px;
-        right: -23px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+  .open .backgruond__main {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 22, 0.49);
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-    .open .language {
-        border: 1px solid #C1C1C1;
-        border-radius: 12px;
-        padding: 16px 260px 16px 16px;
-        display: block;
-        z-index: 8;
-        position: absolute;
-        top: 360px;
-        right: 40px;
+  .open .nav__menu {
+    width: 436px;
+    height: 471px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    right: 19px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-     }
+  .open .header__nav {
+    position: absolute;
+    right: 19px;
+    top: 80px;
+    z-index: 5;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-     .open .backgruond__main {
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 10, 22, 0.49);
-        z-index: 1;
-        position: absolute;
-        top: 60px;
-        right: 1px;
-        transition: transform .2s;
-        display: block;
-     }
+  .open .header__item {
+    display: block;
+    border-bottom: 1px solid #e0e1e2;
+    line-height: 60px;
+    width: 436px;
+    height: 60px;
+    transition: transform 0.2s;
+    display: block;
+    background: rgba(255, 255, 255, 1);
+  }
 
+  .header__link {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    .open .nav__menu {
-        width: 436px;
-        height: 471px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 12px;
-        z-index: 2;
-        position: absolute;
-        top: 80px;
-        right: 19px;
-        transition: transform .2s;
-        display: block;
-        
-    }
+  .open .burger {
+    background: url(../img/close.svg) no-repeat center;
+  }
 
-    .open .header__nav {
-        position: absolute;
-        right: 19px;
-        top: 80px;
-        z-index: 5;
-        transition: transform .2s;
-        display: block;
-    }
+  .header__wrapper {
+    margin: 0 20px;
+    height: 64px;
+  }
 
-    .open .header__item {
-        display: block;
-        border-bottom: 1px solid #e0e1e2;
-        line-height: 60px;
-        width: 436px;
-        height: 60px;
-        transition: transform .2s;
-        display: block;
-        background: rgba(255, 255, 255, 1);
+  .logo {
+    height: 43px;
+    width: 104px;
+  }
 
+  .header__button {
+    position: absolute;
+    right: 0;
 
-    }
+    margin: 7px 64px;
+  }
 
-    .header__link {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-    }
+  .sign-up {
+    font-family: "Inter";
+    font-weight: 600;
+    margin-right: 12px;
+    padding: 17px 24px;
+  }
 
-    .open .burger{
-        background: url(../img/close.svg) no-repeat center;
+  .login {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    gap: 8px;
+    top: 7px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+  }
 
-    }
+  .burger {
+    position: absolute;
+    right: 28px;
+    top: 20px;
 
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: url(../img/bg-menu.svg) no-repeat center;
+  }
 
-    .header__wrapper {
-        margin: 0 20px;
-        height: 64px;
-    }
-    
-    .logo {
-        height: 43px;
-        width: 104px;
+  /* Header End */
 
-    }
+  /* Block start */
+  .block__item {
+    height: 1016px;
+    width: 96.16%;
+    border-radius: 38px;
+    margin-top: 12px;
 
-    .header__button {
+    position: relative;
+    left: 1.92%;
+    top: 0;
+  }
 
-        position: absolute;
-        right: 0;
+  .item__title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 56px 64px 12px 64px;
+  }
 
-        margin: 7px 64px;
+  .item__text {
+    width: 429px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    padding: 0 64px 48px 64px;
+  }
 
-    }
+  .button__google {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    .sign-up {
-        font-family: 'Inter';
-        font-weight: 600;
-        margin-right: 12px;
-        padding: 17px 24px;
-    }
+  .google__logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-
-    .login {
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        box-sizing: border-box;       
-        padding: 16px 24px;
-        gap: 8px;  
-        top: 7px;     
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-    }
-
-    .burger {
-        position: absolute;
-        right: 28px;
-        top: 20px;
-
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        background: url(../img/bg-menu.svg) no-repeat center;
-    }
-
-    /* Header End */
-
-    /* Block start */
-    .block__item {
-
-        height: 1016px;
-        width: 96.16%;
-        border-radius: 38px;
-        margin-top: 12px;
-
-
-
-        position: relative;
-        left: 1.92%;
-        top: 0;
-
-
-    }
-
-
-    .item__title {
-
-        font-size: 48px;
-        font-weight: 800;
-        line-height: 54px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        padding: 56px 64px 12px 64px;
-    }
-
-    .item__text {
-
-        width: 429px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        padding: 0 64px 48px 64px;
-
-    }
-
-    .button__google {
-        padding: 20px 24px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-
-    }
-
-    .google__logo {
-
-        height: 32px;
-        width: 32px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
-    .button__start {
-        padding: 20px 40px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0px 15px 0px 64px;
-    }
-  
-    
-
-
+  .button__start {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 15px 0px 64px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 945px) {
-    
+  .burger {
+    position: absolute;
+    right: 22px;
+    top: 20px;
 
-    .burger {
-        position: absolute;
-        right: 22px;
-        top: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: url(../img/bg-menu.svg) no-repeat center;
+  }
 
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-        background: url(../img/bg-menu.svg) no-repeat center;
-    }
+  .nav__menu {
+    display: none;
+  }
 
-    .nav__menu {
-        display: none;
-    }
+  .header__nav {
+    display: none;
+  }
 
-    .header__nav {
-        display: none;
-    }
+  .header__item {
+    display: none;
+  }
 
-    .header__item {
-        display: none;
-    }
+  .open .login:hover {
+    background: #c1c1c1;
+  }
 
-    .open .login:hover {
-        background: #C1C1C1;
-    }
+  .backgruond__main {
+    display: none;
+  }
 
-    .backgruond__main {
-        display: none;
-    }
+  .open .sign-up {
+    display: block;
+    padding: 26px 63.5px;
+    background: rgba(245, 227, 65, 1);
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 420px;
+    right: 148px;
 
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-    .open .sign-up {
-        display: block;
-        padding: 26px 63.5px;
-        background: rgba(245, 227, 65, 1);
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 420px;
-        right: 148px;
+  .open .login {
+    display: block;
+    padding: 25px 54.5px;
+    background: #ffffff;
+    border: 1px solid #c1c1c1;
+    border-radius: 38px;
+    z-index: 7;
+    position: absolute;
+    top: 420px;
+    right: -13px;
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-    .open .login {
-        display: block;
-        padding: 25px 54.5px;
-        background: #FFFFFF;
-        border: 1px solid #C1C1C1;
-        border-radius: 38px;
-        z-index: 7;
-        position: absolute;
-        top: 420px;
-        right: -13px;
+  .open .language {
+    border: 1px solid #c1c1c1;
+    border-radius: 12px;
+    padding: 16px 260px 16px 16px;
+    display: block;
+    z-index: 8;
+    position: absolute;
+    top: 370px;
+    right: 45px;
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px
-    }
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-    .open .language {
-        border: 1px solid #C1C1C1;
-        border-radius: 12px;
-        padding: 16px 260px 16px 16px;
-        display: block;
-        z-index: 8;
-        position: absolute;
-        top: 370px;
-        right: 45px;
+  .open .backgruond__main {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 22, 0.49);
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-     }
+  .open .nav__menu {
+    width: 436px;
+    height: 471px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    right: 19px;
+    transition: transform 0.2s;
+    display: block;
+  }
 
+  .open .header__nav {
+    position: absolute;
+    right: 585px;
+    top: 80px;
+    z-index: 5;
+    transition: transform 0.2s;
+    display: block;
+  }
 
-     .open .backgruond__main {
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 10, 22, 0.49);
-        z-index: 1;
-        position: absolute;
-        top: 60px;
-        right: 1px;
-        transition: transform .2s;
-        display: block;
-     }
+  .open .header__item {
+    display: block;
+    border-bottom: 1px solid #e0e1e2;
+    line-height: 60px;
+    width: 436px;
+    height: 60px;
+    transition: transform 0.2s;
+    display: block;
+    background: rgba(255, 255, 255, 1);
+  }
 
+  .header__link {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    .open .nav__menu {
-        width: 436px;
-        height: 471px;
-        background: rgba(255, 255, 255, 1);
-        border-radius: 12px;
-        z-index: 2;
-        position: absolute;
-        top: 80px;
-        right: 19px;
-        transition: transform .2s;
-        display: block;
-        
-    }
+  .open .burger {
+    background: url(../img/close.svg) no-repeat center;
+  }
 
-    .open .header__nav {
-        position: absolute;
-        right: 585px;
-        top: 80px;
-        z-index: 5;
-        transition: transform .2s;
-        display: block;
-    }
+  .header__wrapper {
+    margin: 0 13px;
+    height: 64px;
+  }
 
-    .open .header__item {
-        display: block;
-        border-bottom: 1px solid #e0e1e2;
-        line-height: 60px;
-        width: 436px;
-        height: 60px;
-        transition: transform .2s;
-        display: block;
-        background: rgba(255, 255, 255, 1);
+  .logo {
+    height: 43px;
+    width: 104px;
+    margin-right: 24px;
 
+    position: absolute;
+    left: 24px;
+    top: 11px;
+  }
 
-    }
+  .header__list {
+    position: absolute;
+    left: 90px;
+    top: 8px;
+  }
 
-    .header__link {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-    }
+  .header__button {
+    position: absolute;
+    right: 56px;
+  }
 
-    .open .burger{
-        background: url(../img/close.svg) no-repeat center;
+  .sign-up {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-    }
+    padding: 16px 24px;
+  }
 
+  .login {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-    .header__wrapper {
-        margin: 0 13px;
-        height: 64px;
-    }
-    
-    .logo {
-        
-        height: 43px;
-        width: 104px;
-        margin-right: 24px;
+    padding: 16px 24px;
+    border: 1px solid #c1c1c1;
+  }
 
-        position: absolute;
-        left: 24px;
-        top: 11px;
+  .language {
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-    }
+    position: absolute;
+    right: 328px;
+    top: 23px;
+  }
 
-    .header__list {
-        position: absolute;
-        left: 90px;
-        top: 8px;
-    }
+  /* =============================== */
 
-    .header__button {
-        position: absolute;
-        right: 56px;
-    }
+  .block__item {
+    height: 1016px;
+    width: 98.4%;
+    top: 62px;
+    border-radius: 38px;
+    margin-top: 14px;
 
-    .sign-up {
+    position: relative;
+    top: 0;
+    left: 0.8%;
+  }
 
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  /* ===========  */
 
-        padding: 16px 24px;
-    }
+  .item__title {
+    width: 545px;
 
-    .login {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 56px 64px 12px 64px;
+  }
 
-        padding: 16px 24px;
-        border: 1px solid #C1C1C1;
-    }
+  .item__text {
+    width: 429px;
+    height: 84px;
 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    padding: 0 64px 48px 64px;
+  }
 
+  .button__google {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    .language {
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  .google__logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-        position: absolute;
-        right: 328px;
-        top: 23px;
-    }
-
-
-
-/* =============================== */
-
-    .block__item {
-        height: 1016px;
-        width: 98.4%;
-        top: 62px;
-        border-radius: 38px;
-        margin-top: 14px;
-
-        position: relative;
-        top: 0;
-        left: 0.8%;
-    }
-
-    /* ===========  */
-
-    .item__title {
-
-        width: 545px;
-
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 54px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        padding: 56px 64px 12px 64px;
-
-
-    }
-
-    .item__text {
-
-        width: 429px;
-        height: 84px;
-
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        padding: 0 64px 48px 64px;
-
-    }
-
-    .button__google {
-        padding: 20px 24px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-
-    }
-
-    .google__logo {
-
-        height: 32px;
-        width: 32px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
-    .button__start {
-        padding: 20px 40px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0px 15px 0px 64px;
-    }
-
-
+  .button__start {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 15px 0px 64px;
+  }
 }
 
 @media screen and (min-width: 946px) and (max-width: 1154px) {
+  .header__wrapper {
+    margin: 0 13px;
+    height: 64px;
+  }
 
-    .header__wrapper {
-        margin: 0 13px;
-        height: 64px;
-    }
-    
-    .logo {
-        
-        height: 43px;
-        width: 104px;
-        margin-right: 24px;
+  .logo {
+    height: 43px;
+    width: 104px;
+    margin-right: 24px;
 
-        position: absolute;
-        left: 24px;
-        top: 11px;
+    position: absolute;
+    left: 24px;
+    top: 11px;
+  }
 
-    }
+  .header__list {
+    position: absolute;
+    left: 90px;
+    top: 8px;
+  }
 
-    .header__list {
-        position: absolute;
-        left: 90px;
-        top: 8px;
-    }
+  .header__button {
+    position: absolute;
+    right: 24px;
+  }
 
-    .header__button {
-        position: absolute;
-        right: 24px;
-    }
+  .sign-up {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-    .sign-up {
+    padding: 16px 24px;
+  }
 
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  .login {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-        padding: 16px 24px;
-    }
+    padding: 16px 24px;
+    border: 1px solid #c1c1c1;
+  }
 
-    .login {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  .burger-menu {
+    display: none;
+  }
 
-        padding: 16px 24px;
-        border: 1px solid #C1C1C1;
-    }
+  .language {
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
+    position: absolute;
+    right: 296px;
+    top: 23px;
+  }
 
+  /* =============================== */
 
-    .burger-menu {
-        display: none;
-    }
+  .block__item {
+    height: 1016px;
+    width: 98.4%;
+    top: 62px;
+    border-radius: 38px;
+    margin-top: 24px;
 
-    .language {
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+    position: relative;
+    top: 0;
+    left: 0.8%;
+  }
 
-        position: absolute;
-        right: 296px;
-        top: 23px;
-    }
+  /* ===========  */
 
+  .item__title {
+    width: 545px;
 
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding: 56px 64px 12px 64px;
+  }
 
-/* =============================== */
+  .item__text {
+    width: 429px;
+    height: 84px;
 
-    .block__item {
-        height: 1016px;
-        width: 98.4%;
-        top: 62px;
-        border-radius: 38px;
-        margin-top: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    padding: 0 64px 48px 64px;
+  }
 
-        position: relative;
-        top: 0;
-        left: 0.8%;
-    }
+  .button__google {
+    padding: 20px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: left;
+  }
 
-    /* ===========  */
+  .google__logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 
-    .item__title {
-
-        width: 545px;
-
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 54px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        padding: 56px 64px 12px 64px;
-
-
-    }
-
-    .item__text {
-
-        width: 429px;
-        height: 84px;
-
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.015em;
-        text-align: left;
-        padding: 0 64px 48px 64px;
-
-    }
-
-    .button__google {
-        padding: 20px 24px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 18px;
-        letter-spacing: -0.015em;
-        text-align: left;
-
-    }
-
-    .google__logo {
-
-        height: 32px;
-        width: 32px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
-    .button__start {
-        padding: 20px 40px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0px 15px 0px 64px;
-    }
-
-
-
-
-
+  .button__start {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 15px 0px 64px;
+  }
 }
 
-
 @media screen and (min-width: 1153px) {
+  .header__wrapper {
+    margin: 0 13px;
+    height: 64px;
+  }
 
-    .header__wrapper {
-        margin: 0 13px;
-        height: 64px;
-    }
+  .logo {
+    height: 43px;
+    width: 104px;
+    margin-right: 24px;
 
-    .logo {
-    
-        height: 43px;
-        width: 104px;
-        margin-right: 24px;
+    position: absolute;
+    left: 120px;
+    top: 11px;
+  }
 
-        position: absolute;
-        left: 120px;
-        top: 11px;
+  .header__list {
+    position: absolute;
+    left: 208px;
+    top: 8px;
+  }
 
-    }   
+  .header__button {
+    position: absolute;
+    right: 121px;
+  }
 
-    .header__list {
-        position: absolute;
-        left: 208px;
-        top: 8px;
-    }
+  .sign-up {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-    .header__button {
-        position: absolute;
-        right: 121px;
-    }
+    padding: 16px 24px;
+  }
 
-    .sign-up {
+  .login {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+    padding: 16px 24px;
+    border: 1px solid #c1c1c1;
+  }
 
-        padding: 16px 24px;
-    }
+  .burger-menu {
+    display: none;
+  }
 
-    .login {
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  .language {
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
 
-        padding: 16px 24px;
-        border: 1px solid #C1C1C1;
-    }
+    position: absolute;
+    right: 393px;
+    top: 23px;
+  }
 
+  /* =========== */
 
+  .block__item {
+    height: 700px;
+    width: 98.4%;
+    top: 62px;
+    border-radius: 38px;
+    margin-top: 5px;
 
-    .burger-menu {
-        display: none;
-    }
+    position: relative;
+    top: 0;
+    left: 0.8%;
+  }
 
-    .language {
-        border: none;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 18px;
+  .item__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 54px;
+    width: 633px;
+    height: 108px;
 
-        position: absolute;
-        right: 393px;
-        top: 23px;
-    }
+    padding: 136px 0px 23px 109px;
+  }
 
-    /* =========== */
+  .item__text {
+    width: 429px;
+    height: 84px;
 
-    .block__item {
-        height: 700px;
-        width: 98.4%;
-        top: 62px;
-        border-radius: 38px;
-        margin-top: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
 
-        position: relative;
-        top: 0;
-        left: 0.8%;
-    }
+    padding: 0 0 23px 109px;
+  }
 
-    .item__title {
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 54px;
-        width: 633px;
-        height: 108px;
+  .item__button {
+    position: relative;
+    bottom: -24px;
+  }
 
-        padding: 136px 0px  23px 109px;
-    }
+  .button__google {
+    padding: 20px 24px;
 
-    .item__text {
-        width: 429px;
-        height: 84px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+  }
 
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 28px;
+  .button__start {
+    padding: 20px 40px;
 
-        padding: 0 0 23px 109px;
-    }
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 15px 0px 109px;
+  }
 
-    .item__button {
-        position: relative;
-        bottom: -24px;
-    }   
-
-    .button__google {
-        padding: 20px 24px;
-
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 18px;
-    }
-
-    .button__start {
-        padding: 20px 40px;
-
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0px 15px 0px 109px;
-
-    }
-
-    .google__logo {
-
-        height: 32px;
-        width: 32px;
-        vertical-align: middle;
-        margin-right: 8px;
-      
-    }
-
+  .google__logo {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
 }
