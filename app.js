@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("burger").addEventListener("click", function () {
-    document.querySelector("main").classList.toggle("open2");
+    document.querySelector("main").classList.toggle("open");
   });
 });
