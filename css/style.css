@@ -27,10 +27,28 @@ body {
   height: 100%;
 }
 
+.open .nav__item:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  padding: 0 0;
+  border-radius: 0;
+}
+
+.open .nav__link:hover {
+  color: rgba(21, 21, 31, 1);
+}
+
+.open .nav__item:active {
+  background: rgb(255, 255, 255);
+  border-top: 27px;
+  padding: 0 0;
+  border-radius: 0;
+}
+
 .nav__item:hover {
   background: rgba(245, 227, 65, 1);
   padding: 10px 8px;
-  border-radius: 27px;
+  border-top: 27px;
 }
 
 .nav__link:hover {
@@ -46,13 +64,35 @@ body {
 .language:hover {
   border-radius: 23px;
   background: rgba(237, 237, 238, 1);
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 
 .language:active {
   border-radius: 23px;
   background: rgba(237, 237, 238, 1);
-  padding: 10px 0px;
+  padding: 10px 10px;
+}
+
+.open .language:hover {
+  border-radius: 23px;
+  background: rgba(237, 237, 238, 1);
+  padding: 1px 6px;
+
+  border: 1px solid #c1c1c1;
+  border-radius: 12px;
+
+  margin: 0;
+}
+
+.open .language:active {
+  border-radius: 23px;
+  background: rgba(237, 237, 238, 1);
+  padding: 1px 6px;
+
+  border: 1px solid #c1c1c1;
+  border-radius: 12px;
+
+  margin: 0;
 }
 
 .header__sign-up:hover {
@@ -70,6 +110,7 @@ body {
 .header__login:active {
   border: 0;
   background: rgba(237, 237, 238, 1);
+  border: 1px solid rgba(237, 237, 238, 1);
 }
 
 .header__logo {
@@ -208,7 +249,7 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .header__login,
   .nav,
   .language,
@@ -272,7 +313,6 @@ body {
   .sidebar .language {
     border: 1px solid #c1c1c1;
     border-radius: 12px;
-    padding: 1px 210px 1px 20px;
 
     margin: 0;
 
@@ -280,7 +320,9 @@ body {
     font-weight: 600;
     font-size: 15px;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 225px;
   }
 
   .sidebar .nav__link {
@@ -314,6 +356,10 @@ body {
 
   .sidebar .header__nav {
     display: flex;
+  }
+
+  .sidebar .arrow {
+    margin-left: auto;
   }
 
   .open .nav__menu {
@@ -505,8 +551,8 @@ body {
   }
 
   .sidebar .language {
-    padding-right: 300px;
     font-size: 15px;
+    gap: 310px;
   }
 
   .sidebar .header__sign-up {
@@ -602,6 +648,11 @@ body {
   .language,
   .header__nav {
     display: flex;
+  }
+
+  .language {
+    align-items: center;
+    gap: 15px;
   }
 
   .header__login {
