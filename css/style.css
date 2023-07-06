@@ -34,8 +34,25 @@ body {
   border-radius: 0;
 }
 
+.nav__item:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  padding: 0px 0px;
+}
+
+.open .nav__link:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+}
+
 .open .nav__link:hover {
   color: rgba(21, 21, 31, 1);
+}
+
+.nav__link:hover {
+  background: rgba(245, 227, 65, 1);
+  padding: 10px 12px;
+  border-radius: 27px;
 }
 
 .open .nav__item:active {
@@ -45,19 +62,17 @@ body {
   border-radius: 0;
 }
 
-.nav__item:hover {
-  background: rgba(245, 227, 65, 1);
-  padding: 10px 8px;
-  border-top: 27px;
+.nav__link {
+  padding: 10px 12px;
 }
 
 .nav__link:hover {
   color: rgba(21, 21, 31, 1);
 }
 
-.nav__item:active {
+.nav__link:active {
   background: rgba(234, 203, 19, 1);
-  padding: 10px 8px;
+  padding: 10px 12px;
   border-radius: 27px;
 }
 
@@ -73,6 +88,11 @@ body {
   padding: 10px 10px;
 }
 
+.language {
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 1);
+}
+
 .open .language:hover {
   border-radius: 23px;
   background: rgba(237, 237, 238, 1);
@@ -84,6 +104,10 @@ body {
   margin: 0;
 }
 
+.open .language {
+  padding: 1px 6px;
+}
+
 .open .language:active {
   border-radius: 23px;
   background: rgba(237, 237, 238, 1);
@@ -93,6 +117,12 @@ body {
   border-radius: 12px;
 
   margin: 0;
+}
+
+.lang-w {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .header__sign-up:hover {
@@ -138,7 +168,7 @@ body {
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  padding: ;
 }
 
 .nav__link {
@@ -252,7 +282,7 @@ body {
 @media only screen and (min-width: 320px) {
   .header__login,
   .nav,
-  .language,
+  .dropdown,
   .sidebar {
     display: none;
   }
@@ -659,8 +689,39 @@ body {
     margin-left: 30px;
   }
 
-  .language {
+  .dropdown {
     margin-left: auto;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    width: 131px;
+    z-index: 1;
+
+    border: 1px solid rgba(224, 225, 226, 1);
+    border-radius: 8px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
   .header__burger {
