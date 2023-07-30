@@ -11,3 +11,7 @@ gulp.task('sass-compile', function() {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css/'))
 })
+
+gulp.task('watch', function() {
+    gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'))
+})
