@@ -16,12 +16,48 @@ body {
   background-color: #fff;
   height: 64px;
 }
-
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+.header__lang {
+  margin-left: auto;
+}
+.header__sign-up {
+  margin-left: 8px;
+  padding: 16px 24px;
+  border-radius: 38px;
+  background-color: #f5e341;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1em;
+}
+.header__sign-up:hover {
+  background: rgb(250, 226, 26);
+}
+.header__sign-up:active {
+  background: rgb(234, 203, 19);
+}
+.header__login:hover {
+  border: 1px solid #0c0c0c;
+}
+.header__login:active {
+  border: 0;
+  background: rgb(237, 237, 238);
+  border: 1px solid rgb(237, 237, 238);
+}
+.header__logo {
+  font-size: 3em;
+}
+.header__burger {
+  background-image: url("../img/bg-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 24px;
+  height: 16px;
 }
 
 .open .nav__item:hover {
@@ -61,37 +97,11 @@ body {
   margin: 0;
 }
 
-.nav__item:hover {
-  background: rgb(255, 255, 255);
-  border-radius: 27px;
-  padding: 0px 0px;
-}
-
-.nav__link {
-  padding: 10px 12px;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 1em;
-  color: #7a7a7a;
-  text-decoration: none;
-}
-.nav__link:hover {
-  background: rgb(245, 227, 65);
-  padding: 10px 12px;
-  border-radius: 27px;
-  color: rgb(21, 21, 31);
-}
-.nav__link:active {
-  background: rgb(234, 203, 19);
-  padding: 10px 12px;
-  border-radius: 27px;
-}
-
 .language {
   padding: 10px 10px;
   background: rgb(255, 255, 255);
   border: none;
-  color: #15151f;
+  color: rgb(21, 21, 31);
   font-family: "Inter";
   font-size: 1em;
   font-weight: 600;
@@ -114,52 +124,33 @@ body {
   font-size: 1em;
 }
 
-.header__sign-up {
-  margin-left: 8px;
-  padding: 16px 24px;
-  border-radius: 38px;
-  background-color: #f5e341;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 1em;
-}
-.header__sign-up:hover {
-  background: rgb(250, 226, 26);
-}
-.header__sign-up:active {
-  background: rgb(234, 203, 19);
-}
-
-.header__login:hover {
-  border: 1px solid #0c0c0c;
-}
-.header__login:active {
-  border: 0;
-  background: rgb(237, 237, 238);
-  border: 1px solid rgb(237, 237, 238);
-}
-
-.header__logo {
-  font-size: 3em;
-}
-
-.header__burger {
-  background-image: url("../img/bg-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 24px;
-  height: 16px;
-}
-
-.header__lang {
-  margin-left: auto;
-}
-
 .nav {
   margin-left: 40px;
 }
-
+.nav__item:hover {
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  padding: 0px 0px;
+}
+.nav__link {
+  padding: 10px 12px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1em;
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.nav__link:hover {
+  background: rgb(245, 227, 65);
+  padding: 10px 12px;
+  border-radius: 27px;
+  color: rgb(21, 21, 31);
+}
+.nav__link:active {
+  background: rgb(234, 203, 19);
+  padding: 10px 12px;
+  border-radius: 27px;
+}
 .nav__list {
   display: flex;
   align-items: center;
@@ -169,7 +160,7 @@ body {
   padding: 14px 21.5px;
   border-radius: 38px;
   border: 1px solid #c1c1c1;
-  color: #000;
+  color: black;
   background-color: #fff;
   font-family: "Inter";
   font-size: 1em;
@@ -187,19 +178,17 @@ body {
 .item {
   background: radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
 }
-
-.text {
-  font-family: "Inter";
-}
-
 .item__title {
   color: #ffffff;
   font-weight: 800;
 }
-
 .item__text {
   color: #e0e1e2;
   font-weight: 500;
+}
+
+.text {
+  font-family: "Inter";
 }
 
 @media only screen and (min-width: 320px) {
@@ -360,7 +349,7 @@ body {
     font-family: "Inter";
     font-size: 0.875em;
     font-weight: 600;
-    color: #15151f;
+    color: rgb(21, 21, 31);
     margin-top: 8px;
   }
   .google-img {
@@ -375,7 +364,7 @@ body {
     font-weight: 600;
     font-size: 0.875em;
     letter-spacing: -0.015em;
-    color: #15151f;
+    color: rgb(21, 21, 31);
     background: #f5e341;
     border-radius: 38px;
     padding: 15.5px 116.3px;
@@ -542,7 +531,7 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     width: 131px;
     z-index: 1;
     border: 1px solid rgb(224, 225, 226);

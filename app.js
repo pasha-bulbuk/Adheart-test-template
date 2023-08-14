@@ -9,9 +9,3 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("main").classList.toggle("open");
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("languague").addEventListener("click", function () {
-    document.querySelector("languague").classList.toggle("open2");
-  });
-});
