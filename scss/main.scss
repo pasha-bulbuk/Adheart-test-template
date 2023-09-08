@@ -1,11 +1,9 @@
-$color_semi-black: rgba(21, 21, 31, 1);
-$color_gray: #7a7a7a;
-$color_white: #ffffff;
-$color_black: black;
+$color-text-primary: black;
+$color-text-secondary: rgba(21, 21, 31, 1);
+$color-text-tertiary: #7a7a7a;
+$background-color-primary: #fff;
+$background-color-secondary: #f1f1f1;
 $font-family_1: "Inter";
-$background-color_white: #fff;
-$background-color_yellow: #f5e341;
-$background-color_gray: #f1f1f1;
 
 @mixin phone { 
 	@media (min-width: 320px) {
@@ -42,7 +40,7 @@ body {
 	cursor: pointer;
 }
 .header { 
-	background-color: $background-color_white; 
+	background-color: $background-color-primary; 
 	height: 64px; 
 
 	&__wrapper { 
@@ -67,19 +65,20 @@ body {
 	}
 
 	&__sign-up {
+		margin-left: 8px;
+		padding: 16px 24px;
+		border-radius: 38px;
+		background-color: #f5e341;
+		font-family: $font-family_1;
+		font-weight: 600;
+		font-size: 1em;
+
 		&:hover {
 			background: rgba(250, 226, 26, 1);
 		}
 		&:active {
 			background: rgba(234, 203, 19, 1);
 		}
-		margin-left: 8px;
-		padding: 16px 24px;
-		border-radius: 38px;
-		background-color: $background-color_yellow;
-		font-family: $font-family_1;
-		font-weight: 600;
-		font-size: 1em;
 
 		@include phone {
 			margin-left: auto;
@@ -94,8 +93,8 @@ body {
 		padding: 14px 21.5px;
 		border-radius: 38px;
 		border: 1px solid #c1c1c1;
-		color: $color_black;
-		background-color: $background-color_white;
+		color: $color-text-primary;
+		background-color: $background-color-primary;
 		font-family: $font-family_1;
 		font-size: 1em;
 		font-weight: 600;
@@ -167,7 +166,7 @@ body {
 			&:hover {
 				background: rgb(255, 255, 255);
 				border-radius: 27px;
-				color: $color_semi-black;
+				color: $color-text-secondary;
 			}
 		}
 
@@ -234,6 +233,15 @@ body {
 }
 
 .language {
+	padding: 10px 10px;
+	background: rgba(255, 255, 255, 1);
+	border: none;
+	color: $color-text-secondary;
+	font-family: $font-family_1;
+	font-size: 1em;
+	font-weight: 600;
+	margin-left: auto;
+
 	&:hover {
 		border-radius: 23px;
 		background: rgba(237, 237, 238, 1);
@@ -244,15 +252,6 @@ body {
 		background: rgba(237, 237, 238, 1);
 		padding: 10px 10px;
 	}
-
-	padding: 10px 10px;
-	background: rgba(255, 255, 255, 1);
-	border: none;
-	color: $color_semi-black;
-	font-family: $font-family_1;
-	font-size: 1em;
-	font-weight: 600;
-	margin-left: auto;
 
 	@include laptop {
 		display: flex;
@@ -268,6 +267,12 @@ body {
 
 .nav {
 	margin-left: 40px;
+	padding: 10px 12px;
+	font-family: $font-family_1;
+	font-weight: 600;
+	font-size: 1em;
+	color: $color-text-tertiary;
+	text-decoration: none;
 
 	&__item {
 		&:hover {
@@ -282,14 +287,9 @@ body {
 			background: rgba(245, 227, 65, 1);
 			padding: 10px 12px;
 			border-radius: 27px;
-			color: $color_semi-black;
+			color: $color-text-secondary;
 		}
-		padding: 10px 12px;
-		font-family: $font-family_1;
-		font-weight: 600;
-		font-size: 1em;
-		color: $color_gray;
-		text-decoration: none;
+
 		&:active {
 			background: rgba(234, 203, 19, 1);
 			padding: 10px 12px;
@@ -314,18 +314,18 @@ body {
 		@include laptop {
 			display: none;
 			position: absolute;
-			background-color: $background-color_white;
+			background-color: $background-color-primary;
 			width: 131px;
 			z-index: 1;
 			border: 1px solid rgba(224, 225, 226, 1);
 			border-radius: 8px;
 			a {
-				color: $color_black;
+				color: $color-text-primary;
 				padding: 12px 16px;
 				text-decoration: none;
 				display: block;
 				&:hover {
-					background-color: $background-color_gray;
+					background-color: $background-color-secondary;
 				}
 			}
 		}
@@ -353,7 +353,7 @@ body {
 			font-family: $font-family_1;
 			font-weight: 600;
 			font-size: 1em;
-			color: $color_gray;
+			color: $color-text-tertiary;
 			text-decoration: none;
 		}
 
@@ -389,22 +389,46 @@ body {
 		}
 	}
 
-	.language {
-		border: 1px solid #c1c1c1;
-		border-radius: 12px;
-		margin: 0;
-		font-family: $font-family_1;
-		font-weight: 600;
-		font-size: 15px;
+	.dropdown {
 		display: flex;
+
+			&-content {
+				display: none;
+				position: absolute;
+				background-color: $background-color-primary;
+				width: 310px;
+				z-index: 1;
+				border: 1px solid rgba(224, 225, 226, 1);
+				border-radius: 8px;
+					a {
+						color: $color-text-primary;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;
+						&:hover {
+							background-color: $background-color-secondary;
+						}
+					}
+			}
+	}
+
+	.language {
+		display: flex;
+		border-radius: 12px;
+		border: 1px solid #c1c1c1;
+		margin: 0;
+		gap: 255px;
 		align-items: center;
-		gap: 225px;
+		font-family: $font-family_1;
+		font-size: 15px;
+		font-weight: 600;
 
 		@include tablet {
-			font-size: 15px;
 			gap: 310px;
 		}
 	}
+
+
 
 	.header {
 		&__sign-up {
@@ -432,6 +456,7 @@ body {
 			font-size: 1em;
 			border: 1px solid #c1c1c1;
 			border-radius: 38px;
+			margin: 0;
 			margin-bottom: 8px;
 
 			@include tablet {
@@ -455,7 +480,7 @@ body {
 	background: radial-gradient( 29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100% ) , radial-gradient( 33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100% ) , radial-gradient( 30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100% ) , radial-gradient( 29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100% ) , radial-gradient( 40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100% ), #0e0e0e;
 
 	&__title {
-		color: $color_white;
+		color: #ffffff;
 		font-weight: 800;
 
 		@include phone{
@@ -604,7 +629,7 @@ body {
 	font-family: $font-family_1;
 	font-size: 0.875em;
 	font-weight: 600;
-	color: $color_semi-black;
+	color: $color-text-secondary;
 	margin-top: 8px;
 
 	&-img {
@@ -633,7 +658,7 @@ body {
 		font-weight: 600;
 		font-size: 0.875em;
 		letter-spacing: -0.015em;
-		color: $color_semi-black;
+		color: $color-text-secondary;
 		background: #f5e341;
 		border-radius: 38px;
 		padding: 15.5px 116.3px;
@@ -699,7 +724,7 @@ body {
 		font-family: $font-family_1;
 		font-weight: 800;
 		font-size: 1.3684875em;
-		color: $color_white;
+		color: #ffffff;
 		letter-spacing: -0.015em;
 		position: relative;
 		top: -290px;
