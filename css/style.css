@@ -168,7 +168,6 @@ body {
 .nav__list {
   display: flex;
   align-items: center;
-  padding: ;
 }
 
 .nav__link {
@@ -510,16 +509,6 @@ body {
     flex-wrap: wrap;
   }
 
-  .cup2,
-  .cup3,
-  .cup4 {
-    display: none;
-  }
-
-  .cup1 {
-    position: relative;
-    top: -125px;
-  }
 
   .numbers {
     font-family: "Inter";
@@ -642,16 +631,6 @@ body {
     width: 32px;
   }
 
-  .cup1 {
-    display: none;
-  }
-
-  .cup2 {
-    display: flex;
-    position: relative;
-    top: -239px;
-  }
-
   .numbers {
     top: -533px;
     left: 180px;
@@ -738,19 +717,6 @@ body {
     height: 108px;
   }
 
-  .item__text {
-  }
-
-  .cup2 {
-    display: none;
-  }
-
-  .cup3 {
-    display: flex;
-    position: relative;
-    top: -161px;
-  }
-
   .numbers {
     top: -423px;
     left: 180px;
@@ -763,9 +729,7 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  .cup3 {
-    display: none;
-  }
+
 
   .container {
     padding: 0 120px;
@@ -773,14 +737,6 @@ body {
     margin: 0 auto;
 
     max-width: 1440px;
-  }
-
-  .cup4 {
-    display: flex;
-
-    position: relative;
-    top: -432px;
-    left: 324px;
   }
 
   .item__text {
