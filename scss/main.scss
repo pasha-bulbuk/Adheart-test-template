@@ -6,67 +6,67 @@ $background-color-secondary: #f1f1f1;
 $font-family_1: "Inter";
 
 @mixin phone { 
-	@media (min-width: 320px) {
-		@content; 
-	} 
+  @media (min-width: 320px) {
+    @content; 
+  } 
 }
 
 
 @mixin tablet { 
-	@media (min-width: 768px) {
-		@content; 
-	} 
+  @media (min-width: 768px) {
+    @content; 
+  } 
 }
 
 @mixin laptop { 
-	@media (min-width: 1024px) {
-		@content; 
-	} 
+  @media (min-width: 1024px) {
+    @content; 
+  } 
 }
 
 @mixin  desktop { 
-	@media (min-width: 1440px) {
-		@content; 
-	} 
+  @media (min-width: 1440px) {
+    @content; 
+  } 
 }
 
 
 
 body {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .btn {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .header { 
-	background-color: $background-color-primary; 
-	height: 64px; 
+  background-color: $background-color-primary; 
+  height: 64px; 
 
-	&__wrapper { 
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 100%; 
+  &__wrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; 
 
-		@include laptop {
-			justify-content: normal;
-		}
-	}
+    @include laptop {
+      justify-content: normal;
+    }
+  }
 
-	&__nav {
-		@include laptop {
-			display: flex;
-		}
-	}
+  &__nav {
+    @include laptop {
+      display: flex;
+    }
+  }
 	
-	&__lang {
-		margin-left: auto;
-	}
+  &__lang {
+    margin-left: auto;
+  }
 
-	&__sign-up {
+  &__sign-up {
     margin-left: auto;
     padding: 16px 24px;
     border-radius: 38px;
@@ -75,70 +75,69 @@ body {
     font-weight: 600;
     font-size: 1em;
 
-		&:hover {
-			background: rgba(250, 226, 26, 1);
-		}
-		&:active {
-			background: rgba(234, 203, 19, 1);
-		}
+    &:hover {
+      background: rgba(250, 226, 26, 1);
+    }
+    &:active {
+      background: rgba(234, 203, 19, 1);
+    }
+    @include tablet {
+      margin-left: 8px;
+    }
+  }
 
-		@include tablet {
-			margin-left: 8px;
-		}
-	}
+  &__login {
+    padding: 14px 21.5px;
+    border-radius: 38px;
+    border: 1px solid #c1c1c1;
+    color: $color-text-primary;
+    background-color: $background-color-primary;
+    font-family: $font-family_1;
+    font-size: 1em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 
-	&__login {
-		padding: 14px 21.5px;
-		border-radius: 38px;
-		border: 1px solid #c1c1c1;
-		color: $color-text-primary;
-		background-color: $background-color-primary;
-		font-family: $font-family_1;
-		font-size: 1em;
-		font-weight: 600;
-		display: flex;
-		align-items: center;
-		margin-left: 30px;
+    &:hover {
+      border: 1px solid #0c0c0c;
+    }
+    &:active {
+      border: 0;
+      background: rgba(237, 237, 238, 1);
+      border: 1px solid rgba(237, 237, 238, 1);
+    }
+    @include phone {
+      display: none;
+    }
 
-		&:hover {
-			border: 1px solid #0c0c0c;
-		}
-		&:active {
-			border: 0;
-			background: rgba(237, 237, 238, 1);
-			border: 1px solid rgba(237, 237, 238, 1);
-		}
-		@include phone {
-			display: none;
-		}
+    @include tablet {
+      display: flex;
+      margin-left: auto;
+    }
 
-		@include tablet {
-			display: flex;
-			margin-left: auto;
-		}
+    @include laptop {
+      margin-left: 30px;
+    }
+  }
 
-		@include laptop {
-			margin-left: 30px;
-		}
-	}
+  &__logo {
+    font-size: 3em;
+  }
 
-	&__logo {
-		font-size: 3em;
-	}
-
-	&__burger {
-		background-image: url("../img/bg-menu.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		width: 24px;
-		height: 16px;
+  &__burger {
+    background-image: url("../img/bg-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 16px;
     margin-left: 15px;
 
-		@include laptop {
-			display: none;
-		}
-	}
+    @include laptop {
+      display: none;
+    } 
+  }
 }
 
 .open {
@@ -227,83 +226,83 @@ body {
 }
 
 .language {
-	padding: 10px 10px;
-	background: rgba(255, 255, 255, 1);
-	border: none;
-	color: $color-text-secondary;
-	font-family: $font-family_1;
-	font-size: 1em;
-	font-weight: 600;
-	margin-left: auto;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  color: $color-text-secondary;
+  font-family: $font-family_1;
+  font-size: 1em;
+  font-weight: 600;
+  margin-left: auto;
 
-	&:hover {
-		border-radius: 23px;
-		background: rgba(237, 237, 238, 1);
-		padding: 10px 10px;
-	}
-	&:active {
-		border-radius: 23px;
-		background: rgba(237, 237, 238, 1);
-		padding: 10px 10px;
-	}
+  &:hover {
+    border-radius: 23px;
+    background: rgba(237, 237, 238, 1);
+    padding: 10px 10px;
+  }
+  &:active {
+    border-radius: 23px;
+    background: rgba(237, 237, 238, 1);
+    padding: 10px 10px;
+  }
 
-	@include laptop {
-		display: flex;
-		align-items: center;
-		gap: 15px;
-	}
+  @include laptop {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
 }
 .lang-w {
-	font-family: $font-family_1;
-	font-weight: 500;
-	font-size: 1em;
+  font-family: $font-family_1;
+  font-weight: 500;
+  font-size: 1em;
 }
 
 .nav {
-	margin-left: 40px;
-	padding: 10px 0px;
-	font-family: $font-family_1;
-	font-weight: 600;
-	font-size: 1em;
-	color: $color-text-tertiary;
-	text-decoration: none;
+  margin-left: 40px;
+  padding: 10px 0px;
+  font-family: $font-family_1;
+  font-weight: 600;
+  font-size: 1em;
+  color: $color-text-tertiary;
+  text-decoration: none;
 
-	&__item {
-		&:hover {
-			background: rgb(255, 255, 255);
-			border-radius: 27px;
-			padding: 0px 0px;
-		}
-	}
+  &__item {
+    &:hover {
+      background: rgb(255, 255, 255);
+      border-radius: 27px;
+      padding: 0px 0px;
+    }
+  }
 
-	&__link {
+  &__link {
     text-decoration: none;
     color: #7a7a7a;
     padding: 10px 12px;
     border-radius: 27px;
 
-		&:hover {
-			background: rgba(245, 227, 65, 1);
-			padding: 10px 12px;
-			border-radius: 27px;
-			color: $color-text-secondary;
-		}
+    &:hover {
+      background: rgba(245, 227, 65, 1);
+      padding: 10px 12px;
+      border-radius: 27px;
+      color: $color-text-secondary;
+    }
 
-		&:active {
-			background: rgba(234, 203, 19, 1);
-			padding: 10px 12px;
-			border-radius: 27px;
-		}
-	}
+    &:active {
+      background: rgba(234, 203, 19, 1);
+      padding: 10px 12px;
+      border-radius: 27px;
+    }
+  }
 
-	&__list {
-		display: flex;
-		align-items: center;
-	}
+  &__list {
+    display: flex;
+    align-items: center;
+  }
 
-	@include phone {
-		display: none;
-	}
+  @include phone {
+    display: none;
+  }
 
   @include laptop {
     display: flex;
@@ -473,8 +472,8 @@ body {
 }
 
 .section {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .block {
@@ -499,66 +498,63 @@ body {
   position: relative;
 
 	&__title {
-		color: #ffffff;
-		font-weight: 800;
+    color: #ffffff;
+    font-weight: 800;
 
-		@include phone {
-			font-size: 1.875em;
-			line-height: 36px;
-			z-index: 2;
-		}
+    @include phone {
+      font-size: 1.875em;
+      line-height: 36px;
+      z-index: 2;
+    }
 
-		@include tablet {
-			font-size: 3em;
-			line-height: 54px;
-		}
+    @include tablet {
+      font-size: 3em;
+      line-height: 54px;
+    }
 
-		@include laptop {
-			width: 545px;
-			height: 108px;
-		}
+    @include laptop {
+      width: 545px;
+      height: 108px;
+    }
 
-		@include desktop {
-		}
-	}
+    @include desktop {
+    }
+  }
 
-	&__text {
-		color: #e0e1e2;
-		font-weight: 500;
+  &__text {
+    color: #e0e1e2;
+    font-weight: 500;
 
-		@include phone {
-			font-size: 0.9375em;
-			line-height: 25px;
-			letter-spacing: -0.015em;
-			text-align: left;
-			color: rgba(255, 255, 255, 0.6);
-			margin-top: 8px;
-			z-index: 3;
-		}
+    @include phone {
+      font-size: 0.9375em;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 8px;
+      z-index: 3;
+    }
 
-		@include tablet {
-			font-size: 1.125em;
-			width: 429px;
-			height: 84px;
-		}
+    @include tablet {
+      font-size: 1.125em;
+      width: 429px;
+      height: 84px;
+    }
+  }
 
-	}
-
-	&__btn {
-		@include phone {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
+  &__btn {
+    @include phone {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 32px;
-		}
+    }
 
-		@include tablet {
-			justify-content: flex-start;
-			gap: 15px;
-			
-		}
-
-	}
+    @include tablet {
+      justify-content: flex-start;
+      gap: 15px;
+    }
+  }
 
   &__info {
     position: absolute;
@@ -581,27 +577,26 @@ body {
     }
   }
 
-	@include tablet {
-		width: 728px;
-		height: 1016px;
+  @include tablet {
+    width: 728px;
+    height: 1016px;
     background: url(../img/cup2.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
+  }
 
-	}
-
-	@include laptop {
-		width: 1008px;
-		height: 1016px;
+  @include laptop {
+    width: 1008px;
+    height: 1016px;
     background: url(../img/cup3.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-	}
+  }
 
-	@include desktop {
-		width: 1416px;
-		height: 700px;
+  @include desktop {
+    width: 1416px;
+    height: 700px;
     background: url(../img/cup4.svg) right bottom / contain no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e; 
-	}
+  }
 }
 .text {
-	font-family: $font-family_1;
+  font-family: $font-family_1;
 }
 
 .main {
@@ -613,112 +608,111 @@ body {
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
 
-	@include phone {
-		padding: 0 16px;
-	}
+  @include phone {
+    padding: 0 16px;
+  }
 
-	@include tablet {
-		padding: 0 24px;
-		margin: 0 auto;
-	}
+  @include tablet {
+    padding: 0 24px;
+    margin: 0 auto;
+  }
 
-	@include laptop {
-		padding: 0 25px;
-		margin: 0 auto;
-	}
+  @include laptop {
+    padding: 0 25px;
+    margin: 0 auto;
+  }
 
-	@include desktop {
-		padding: 0 120px;
-		margin: 0 auto;
-		max-width: 1440px;
-	}
+  @include desktop {
+    padding: 0 120px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
 
 .google {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 11px 68.5px;
-	gap: 8px;
-	background: #ffffff;
-	border: 1px solid #e0e1e2;
-	border-radius: 38px;
-	font-family: $font-family_1;
-	font-size: 0.875em;
-	font-weight: 600;
-	color: $color-text-secondary;
-	margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 68.5px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #e0e1e2;
+  border-radius: 38px;
+  font-family: $font-family_1;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: $color-text-secondary;
+  margin-top: 8px;  
 
-	&-img {
-		@include phone {
-			height: 24px;
-			width: 24px;
-		}
+  &-img {
+    @include phone {
+      height: 24px;
+      width: 24px;
+    }
 
-		@include tablet {
-			height: 32px;
-			width: 32px;
-		}
-	}
+    @include tablet {
+      height: 32px;
+      width: 32px;
+    }
+  }
 
-	@include tablet {
-		padding: 15px 20px;
-		font-size: 18px;
-		border-radius: 38px;
-		margin-top: 0px;
-	}
+  @include tablet {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 38px;
+    margin-top: 0px;
+  }
 }
 
 .start {
-	@include phone {
-		font-family: $font-family_1;
-		font-weight: 600;
-		font-size: 0.875em;
-		letter-spacing: -0.015em;
-		color: $color-text-secondary;
-		background: #f5e341;
-		border-radius: 38px;
-		padding: 15.5px 116.3px;
-	}
+  @include phone {
+    font-family: $font-family_1;
+    font-weight: 600;
+    font-size: 0.875em;
+    letter-spacing: -0.015em;
+    color: $color-text-secondary;
+    background: #f5e341;
+    border-radius: 38px;
+    padding: 15.5px 116.3px;
+  }
 
-	@include tablet {
-		padding: 15px 40px;
-		font-size: 18px;
-		border-radius: 38px;
-	}
+  @include tablet {
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 38px;
+  }
 }
 
 .numbers {
-	@include phone {
-		font-family: $font-family_1;
-		font-weight: 800;
-		font-size: 1.3684875em;
-		color: #ffffff;
-		letter-spacing: -0.015em;
-	}
+  @include phone {
+    font-family: $font-family_1;
+    font-weight: 800;
+    font-size: 1.3684875em;
+    color: #ffffff;
+    letter-spacing: -0.015em;
+  }
 
-	@include tablet {
-		font-size: 2.54508125em;
+  @include tablet {
+    font-size: 2.54508125em;
   }
 }
 
 .wiews {
-	@include phone {
-		font-family: $font-family_1;
-		font-weight: 600;
-		font-size: 0.84664875em;
-		color: rgba(255, 255, 255, 0.9);
-	}
+  @include phone {
+    font-family: $font-family_1;
+    font-weight: 600;
+    font-size: 0.84664875em;
+    color: rgba(255, 255, 255, 0.9);
+  }
 
 
-	@include tablet {
-		font-size: 1.574275em;
-	}
-
+  @include tablet {
+    font-size: 1.574275em;
+  }
 }
 
 .link {
