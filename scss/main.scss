@@ -61,7 +61,7 @@ body {
       display: flex;
     }
   }
-	
+
   &__lang {
     margin-left: auto;
   }
@@ -81,12 +81,13 @@ body {
     &:active {
       background: rgba(234, 203, 19, 1);
     }
+
     @include tablet {
       margin-left: 8px;
     }
   }
 
-  &__login {
+	&__login {
     padding: 14px 21.5px;
     border-radius: 38px;
     border: 1px solid #c1c1c1;
@@ -136,7 +137,7 @@ body {
 
     @include laptop {
       display: none;
-    } 
+    }
   }
 }
 
@@ -275,7 +276,7 @@ body {
     }
   }
 
-  &__link {
+	&__link {
     text-decoration: none;
     color: #7a7a7a;
     padding: 10px 12px;
@@ -472,8 +473,9 @@ body {
 }
 
 .section {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+  margin-bottom: 20px;
 }
 
 .block {
@@ -489,20 +491,24 @@ body {
 }
 
 .item {
-  background: url(../img/cup1.svg) center bottom / 420px auto no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-  width: 375px;
+  background: url(../img/cup1.svg) center bottom / 359px auto no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
+  width: 320px;
   height: 732px;
   border-radius: 24px;
   border-radius: 24px;
   margin-top: 8px;
   position: relative;
 
+  @media (min-width: 359px) {
+    width: 359px;
+  }
+
 	&__title {
     color: #ffffff;
     font-weight: 800;
-
+    
     @include phone {
-      font-size: 1.875em;
+      font-size: 1.85em;
       line-height: 36px;
       z-index: 2;
     }
@@ -540,6 +546,7 @@ body {
       width: 429px;
       height: 84px;
     }
+
   }
 
   &__btn {
@@ -554,13 +561,18 @@ body {
       justify-content: flex-start;
       gap: 15px;
     }
+
   }
 
   &__info {
     position: absolute;
     text-align: center;
-    left: 30%;
-    bottom: 148px;
+    left: 82px;
+    bottom: 122px;
+
+    @media (min-width: 359px) {
+      left: 101px;
+    }
    
     @include tablet {
       left: 228px;
@@ -581,13 +593,14 @@ body {
     width: 728px;
     height: 1016px;
     background: url(../img/cup2.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
+
   }
 
   @include laptop {
     width: 1008px;
     height: 1016px;
     background: url(../img/cup3.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-  }
+	}
 
   @include desktop {
     width: 1416px;
@@ -597,14 +610,6 @@ body {
 }
 .text {
   font-family: $font-family_1;
-}
-
-.main {
-  margin: 0px 8px;
-
-  @include laptop {
-    margin: 0;
-  }
 }
 
 .container {
@@ -637,7 +642,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 11px 68.5px;
+  padding: 11px 48.5px;
   gap: 8px;
   background: #ffffff;
   border: 1px solid #e0e1e2;
@@ -646,9 +651,9 @@ body {
   font-size: 0.875em;
   font-weight: 600;
   color: $color-text-secondary;
-  margin-top: 8px;  
+  margin-top: 8px;
 
-  &-img {
+    &-img {
     @include phone {
       height: 24px;
       width: 24px;
@@ -658,6 +663,10 @@ body {
       height: 32px;
       width: 32px;
     }
+  }
+
+  @media (min-width: 359px) {
+    padding: 11px 68.5px;
   }
 
   @include tablet {
@@ -677,6 +686,10 @@ body {
     color: $color-text-secondary;
     background: #f5e341;
     border-radius: 38px;
+    padding: 14px 96.3px;
+  }
+
+  @media (min-width: 359px) {
     padding: 15.5px 116.3px;
   }
 
@@ -713,8 +726,343 @@ body {
   @include tablet {
     font-size: 1.574275em;
   }
+
 }
 
 .link {
   text-decoration: none;
+}
+
+.block-img {
+  background: url(../img/woman.svg) top center / cover no-repeat;
+  height: 426px;
+  width: 320px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-radius: 24px;
+
+  @media (min-width: 359px) {
+    width: 344px;
+  }
+
+  @include tablet {
+    width: 728px;
+    height: 628px;
+  }
+
+  @include laptop {
+    width: 480px;
+    height: 594px;
+  }
+
+  @include desktop {
+    width: 507px;
+    height: 628px;
+  }
+}
+
+.name-photo {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 59px;
+  width: 268px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-right: 21.64px;
+  margin-bottom: 6px;
+
+  @media (min-width: 359px) {
+    width: 298px;
+  }
+
+  @include tablet {
+    width: 668px;
+    height: 73px;
+    margin-bottom: 32px;
+  }
+
+  @include laptop {
+    width: 413.3px;
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+
+.name {
+  font-family: $font-family_1;
+  color: rgba(106, 103, 218, 1);
+  font-size: 0.875rem;
+  letter-spacing: -0.21px;
+  font-weight: 500;
+  
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
+
+.block-name {
+  padding: 8px 16px;
+  background: rgba(106, 103, 218, 0.1);
+  border-radius: 27px;
+
+  @include tablet {
+    padding: 10px 18.33px;
+  }
+}
+
+.block-like {
+  display: flex;
+  gap: 16px;
+}
+
+.like {
+  display: flex;
+  gap: 8px;
+
+}
+
+.coments {
+  display: none;
+
+  @include tablet {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+
+.l-text {
+  font-family: $font-family_1;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  @include laptop {
+    font-size: 1.25rem;
+  }
+}
+
+.sb-fire {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  
+}
+
+.sb-text {
+  @include laptop {
+    width: 453px;
+  }
+}
+
+.advertis {
+  font-family: $font-family_1;
+  font-weight: 800;
+  font-size: 1.625rem;
+  margin-bottom: 8px;
+
+  @include tablet {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+}
+
+.t-tabs {
+  margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.wh-block {
+  background: rgba(106, 103, 218, 0.1);
+  border-radius: 27px;
+  width: 181px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-bottom: 8px;
+
+  @media (min-width: 359px) {
+    margin-left: 0px;
+  }
+
+  @include tablet {
+    width: 282px;
+    margin-bottom: 24px;
+  }
+}
+
+.wh {
+  font-family: $font-family_1;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: rgba(106, 103, 218, 1);
+  padding: 8px 16px;
+
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
+
+
+.tab-content {
+  padding: 10px;
+  display: none;
+  width: 300px;
+
+  &.current {
+    display: inherit;
+  }
+
+  @media (min-width: 359px) {
+    padding: 0;
+    padding-top: 10px;
+    width: 345px
+  }
+
+  @include tablet {
+    width: 531px;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include laptop {
+    justify-content: flex-start;
+  }
+
+  @include laptop {
+    
+  }
+}
+
+.tab-link {
+  color: rgba(63, 63, 73, 1);
+  font-family: $font-family_1;
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-bottom: 5px solid rgba(224, 225, 226, 1);
+  cursor: pointer;
+
+  &-1 {
+    padding: 12px 41.28px;
+
+    @media (min-width: 359px) {
+      padding: 12px 48.28px;
+    }
+
+    @include tablet {
+      padding: 12px 131.71px;
+    }
+
+    @include laptop {
+      padding: 12px 40.22px;
+    }
+
+    @include desktop {
+      padding: 12px 81.67px;
+    }
+  }
+
+  &-2 {
+    padding: 12px 31.7px;
+
+    @media (min-width: 359px) {
+      padding: 12px 38.73px;
+    }
+
+    @include tablet {
+      padding: 12px 119.43px;
+    }
+
+    @include laptop {
+      padding: 12px 27.93px;
+    }
+
+    @include desktop {
+      padding: 12px 69.43px;
+    }
+  }
+
+  &.current {
+    border-bottom: 5px solid rgba(21, 21, 31, 1);
+    cursor: default;
+  }
+
+  @include tablet {
+    font-size: 1.125rem;
+  }
+}
+
+.tariffs {
+  padding: 16px 24px;
+  margin: 0px 0px 22px 0px;
+
+  @include tablet {
+    margin: 24px 0px 40px 0px;
+  }
+}
+
+.s-text {
+  font-family: $font-family_1;
+
+  @include tablet {
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
+
+  @include laptop {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.015rem;
+    width: 475px;
+  }
+}
+
+.t-text {
+  @include laptop {
+    font-size: 1.125rem;
+    width: 371px;
+  }
+
+  @include desktop {
+    width: 490px;
+  }
+}
+
+.second-block {
+  @include laptop {
+    display: flex;
+    margin-top: 62px;
+  }
+
+  @include desktop {
+    flex-direction: row-reverse;
+  }
+}
+
+.block-text {
+  @include laptop {
+    padding-top: 24px;
+  }
+
+  @include desktop {
+    padding-top: 61px;
+    padding-left: 101px;
+  }
 }
