@@ -21,7 +21,7 @@ $font-family_1: "Inter";
 @mixin laptop { 
   @media (min-width: 1024px) {
     @content; 
-  } 
+	} 
 }
 
 @mixin  desktop { 
@@ -46,22 +46,22 @@ body {
   height: 64px; 
 
   &__wrapper { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
 
-    @include laptop {
+  @include laptop {
       justify-content: normal;
     }
   }
 
-  &__nav {
+	&__nav {
     @include laptop {
       display: flex;
     }
   }
-
+	
   &__lang {
     margin-left: auto;
   }
@@ -87,7 +87,7 @@ body {
     }
   }
 
-	&__login {
+  &__login {
     padding: 14px 21.5px;
     border-radius: 38px;
     border: 1px solid #c1c1c1;
@@ -276,7 +276,7 @@ body {
     }
   }
 
-	&__link {
+  &__link {
     text-decoration: none;
     color: #7a7a7a;
     padding: 10px 12px;
@@ -472,12 +472,6 @@ body {
   }
 }
 
-.section {
-	display: flex;
-	justify-content: center;
-  margin-bottom: 20px;
-}
-
 .block {
   padding: 24px;
 
@@ -491,22 +485,17 @@ body {
 }
 
 .item {
-  background: url(../img/cup1.svg) center bottom / 359px auto no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-  width: 320px;
+  background: url(../img/cup1.svg) center bottom / 445px auto no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
+  width: 445px;
   height: 732px;
   border-radius: 24px;
   border-radius: 24px;
-  margin-top: 8px;
   position: relative;
 
-  @media (min-width: 359px) {
-    width: 359px;
-  }
-
-	&__title {
+  &__title {
     color: #ffffff;
     font-weight: 800;
-    
+
     @include phone {
       font-size: 1.85em;
       line-height: 36px;
@@ -516,14 +505,6 @@ body {
     @include tablet {
       font-size: 3em;
       line-height: 54px;
-    }
-
-    @include laptop {
-      width: 545px;
-      height: 108px;
-    }
-
-    @include desktop {
     }
   }
 
@@ -537,16 +518,12 @@ body {
       letter-spacing: -0.015em;
       text-align: left;
       color: rgba(255, 255, 255, 0.6);
-      margin-top: 8px;
       z-index: 3;
     }
 
     @include tablet {
       font-size: 1.125em;
-      width: 429px;
-      height: 84px;
     }
-
   }
 
   &__btn {
@@ -555,24 +532,20 @@ body {
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 32px;
+      gap: 8px;
     }
 
     @include tablet {
       justify-content: flex-start;
-      gap: 15px;
+      gap: 15px;			
     }
-
   }
 
   &__info {
     position: absolute;
     text-align: center;
-    left: 82px;
-    bottom: 122px;
-
-    @media (min-width: 359px) {
-      left: 101px;
-    }
+    left: 29%;
+    bottom: 160px;
    
     @include tablet {
       left: 228px;
@@ -589,9 +562,9 @@ body {
     }
   }
 
-  @include tablet {
-    width: 728px;
-    height: 1016px;
+	@include tablet {
+  width: 728px;
+  height: 1016px;
     background: url(../img/cup2.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
 
   }
@@ -602,17 +575,27 @@ body {
     background: url(../img/cup3.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
 	}
 
-  @include desktop {
+	@include desktop {
     width: 1416px;
     height: 700px;
     background: url(../img/cup4.svg) right bottom / contain no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e; 
+	}
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @include laptop {
+    width: 545px;
   }
 }
 .text {
   font-family: $font-family_1;
 }
 
-.container {
+.header__wrapper {
   margin: 0 auto;
   max-width: 1440px;
 
@@ -634,7 +617,7 @@ body {
     padding: 0 120px;
     margin: 0 auto;
     max-width: 1440px;
-  }
+	}
 }
 
 .google {
@@ -642,18 +625,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 11px 48.5px;
   gap: 8px;
-  background: #ffffff;
-  border: 1px solid #e0e1e2;
-  border-radius: 38px;
   font-family: $font-family_1;
   font-size: 0.875em;
   font-weight: 600;
   color: $color-text-secondary;
-  margin-top: 8px;
 
-    &-img {
+  &-img {
     @include phone {
       height: 24px;
       width: 24px;
@@ -665,15 +643,9 @@ body {
     }
   }
 
-  @media (min-width: 359px) {
-    padding: 11px 68.5px;
-  }
 
   @include tablet {
-    padding: 15px 20px;
     font-size: 18px;
-    border-radius: 38px;
-    margin-top: 0px;
   }
 }
 
@@ -686,11 +658,7 @@ body {
     color: $color-text-secondary;
     background: #f5e341;
     border-radius: 38px;
-    padding: 14px 96.3px;
-  }
-
-  @media (min-width: 359px) {
-    padding: 15.5px 116.3px;
+    padding: 15.5px 34%;
   }
 
   @include tablet {
@@ -704,7 +672,7 @@ body {
   @include phone {
     font-family: $font-family_1;
     font-weight: 800;
-    font-size: 1.3684875em;
+    font-size: 1.4em;
     color: #ffffff;
     letter-spacing: -0.015em;
   }
@@ -718,7 +686,7 @@ body {
   @include phone {
     font-family: $font-family_1;
     font-weight: 600;
-    font-size: 0.84664875em;
+    font-size: 0.9em;
     color: rgba(255, 255, 255, 0.9);
   }
 
@@ -731,20 +699,24 @@ body {
 
 .link {
   text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e0e1e2;
+  border-radius: 38px;
+  padding: 10px 21.34%;
+
+  @include tablet {
+    padding: 15px 20px;
+  }
 }
 
 .block-img {
   background: url(../img/woman.svg) top center / cover no-repeat;
   height: 426px;
-  width: 320px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   border-radius: 24px;
-
-  @media (min-width: 359px) {
-    width: 344px;
-  }
+  margin-top: 24px;
 
   @include tablet {
     width: 728px;
@@ -765,7 +737,7 @@ body {
 .name-photo {
   background: rgba(255, 255, 255, 1);
   border-radius: 59px;
-  width: 268px;
+  width: 85%;
   height: 54px;
   display: flex;
   align-items: center;
@@ -773,10 +745,6 @@ body {
   padding-left: 13px;
   padding-right: 21.64px;
   margin-bottom: 6px;
-
-  @media (min-width: 359px) {
-    width: 298px;
-  }
 
   @include tablet {
     width: 668px;
@@ -850,7 +818,7 @@ body {
 .sb-fire {
   display: flex;
   gap: 16px;
-  margin-bottom: 12px;
+  margin-top: 12px;
   
 }
 
@@ -864,7 +832,6 @@ body {
   font-family: $font-family_1;
   font-weight: 800;
   font-size: 1.625rem;
-  margin-bottom: 8px;
 
   @include tablet {
     font-size: 2.5rem;
@@ -873,28 +840,9 @@ body {
 }
 
 .t-tabs {
-  margin-bottom: 8px;
+  margin-top: 8px;
 
   @include tablet {
-    margin-bottom: 24px;
-  }
-}
-
-.wh-block {
-  background: rgba(106, 103, 218, 0.1);
-  border-radius: 27px;
-  width: 181px;
-  display: flex;
-  justify-content: center;
-  margin-left: 15px;
-  margin-bottom: 8px;
-
-  @media (min-width: 359px) {
-    margin-left: 0px;
-  }
-
-  @include tablet {
-    width: 282px;
     margin-bottom: 24px;
   }
 }
@@ -910,33 +858,42 @@ body {
   @include tablet {
     font-size: 1.25rem;
   }
+
+  &-block {
+    background: rgba(106, 103, 218, 0.1);
+    border-radius: 27px;
+    width: 181px;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  
+    @include tablet {
+      width: 282px;
+      margin-bottom: 24px;
+    }
+  }
 }
 
 
 .tab-content {
-  padding: 10px;
+  padding: 0;
+  padding-top: 10px;
   display: none;
-  width: 300px;
 
   &.current {
     display: inherit;
   }
 
-  @media (min-width: 359px) {
-    padding: 0;
-    padding-top: 10px;
-    width: 345px
-  }
-
   @include tablet {
     width: 531px;
   }
+
 }
 
 .tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 7px;
+  margin-top: 8px;
 
   @include tablet {
     margin-bottom: 24px;
@@ -959,12 +916,8 @@ body {
   border-bottom: 5px solid rgba(224, 225, 226, 1);
   cursor: pointer;
 
-  &-1 {
-    padding: 12px 41.28px;
-
-    @media (min-width: 359px) {
-      padding: 12px 48.28px;
-    }
+  &-first {
+      padding: 12px 14%;
 
     @include tablet {
       padding: 12px 131.71px;
@@ -979,12 +932,8 @@ body {
     }
   }
 
-  &-2 {
-    padding: 12px 31.7px;
-
-    @media (min-width: 359px) {
-      padding: 12px 38.73px;
-    }
+  &-second {
+      padding: 12px 16%;
 
     @include tablet {
       padding: 12px 119.43px;
@@ -1006,15 +955,6 @@ body {
 
   @include tablet {
     font-size: 1.125rem;
-  }
-}
-
-.tariffs {
-  padding: 16px 24px;
-  margin: 0px 0px 22px 0px;
-
-  @include tablet {
-    margin: 24px 0px 40px 0px;
   }
 }
 
@@ -1046,6 +986,12 @@ body {
 }
 
 .second-block {
+  width: 445px;
+
+  @include tablet {
+    width: auto;
+  }
+
   @include laptop {
     display: flex;
     margin-top: 62px;
@@ -1053,6 +999,8 @@ body {
 
   @include desktop {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 110px;
   }
 }
 
@@ -1063,6 +1011,39 @@ body {
 
   @include desktop {
     padding-top: 61px;
-    padding-left: 101px;
+  }
+}
+
+.main {
+  padding: 8px;
+  
+  @include tablet {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.tariffs {
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #e0e1e2;
+  border-radius: 38px;
+  padding: 16px 24px;
+  margin-top: 10px;
+
+  @include tablet {
+    padding: 15px 20px;
+  }
+}
+
+.section {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    display: block;
   }
 }
