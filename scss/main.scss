@@ -484,13 +484,14 @@ body {
   }
 }
 
-.item {
+.box {
   background: url(../img/cup1.svg) center bottom / 445px auto no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-  width: 445px;
+  width: 405px;
   height: 732px;
   border-radius: 24px;
   border-radius: 24px;
   position: relative;
+  padding: 20px;
 
   &__title {
     color: #ffffff;
@@ -544,50 +545,48 @@ body {
   &__info {
     position: absolute;
     text-align: center;
-    left: 29%;
-    bottom: 160px;
+    bottom: 19%;
+    left: 30%;
    
     @include tablet {
-      left: 228px;
-      bottom: 238px;
+      left: 25%;
+      padding: 64px;
     }
 
     @include laptop {
-      left: 363px;
+      bottom: 18%;
+      left: 31%;
     }
 
     @include desktop {
-      left: 832px;
-      bottom: 218px;
+      top: 52%;
+      left: 55%;
     }
   }
 
 	@include tablet {
-  width: 728px;
-  height: 1016px;
+    width: 795px;
+    height: 904px;
     background: url(../img/cup2.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
-
+    padding: 56px 64px;
   }
 
   @include laptop {
     width: 1008px;
-    height: 1016px;
+    height: 904px;
     background: url(../img/cup3.svg) center bottom / cover no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e;
 	}
 
 	@include desktop {
-    width: 1416px;
-    height: 700px;
+    padding: 136px 110px;
+    width: 1196px;
+    height: 428px;
     background: url(../img/cup4.svg) right bottom / contain no-repeat, radial-gradient(29.75% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.2236) 100%), radial-gradient(33.62% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.2838) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.3139) 100%), radial-gradient(40.36% 95.9% at 50% 70.37%, #ff8642 0%, rgba(0, 0, 0, 0.43) 100%), #0e0e0e; 
 	}
 }
 
-.title-block {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  @include laptop {
+.box_text_block {
+  @include tablet {
     width: 545px;
   }
 }
@@ -719,13 +718,13 @@ body {
   margin-top: 24px;
 
   @include tablet {
-    width: 728px;
-    height: 628px;
+    height: 728px;
   }
 
   @include laptop {
-    width: 480px;
+    width: 510px;
     height: 594px;
+    margin-top: 0px;
   }
 
   @include desktop {
@@ -747,13 +746,11 @@ body {
   margin-bottom: 6px;
 
   @include tablet {
-    width: 668px;
     height: 73px;
     margin-bottom: 32px;
   }
 
   @include laptop {
-    width: 413.3px;
     margin-bottom: 16px;
   }
 
@@ -815,14 +812,13 @@ body {
   }
 }
 
-.sb-fire {
-  display: flex;
-  gap: 16px;
+.list {
   margin-top: 12px;
-  
 }
 
-.sb-text {
+.list {
+  list-style: url(../img/fire.svg);
+  margin-left: 24px;
   @include laptop {
     width: 453px;
   }
@@ -848,29 +844,11 @@ body {
 }
 
 .wh {
-  font-family: $font-family_1;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1rem;
-  color: rgba(106, 103, 218, 1);
-  padding: 8px 16px;
+  width: 168px;
 
   @include tablet {
-    font-size: 1.25rem;
-  }
-
-  &-block {
-    background: rgba(106, 103, 218, 0.1);
-    border-radius: 27px;
-    width: 181px;
-    display: flex;
-    justify-content: center;
-    margin-left: 0px;
-  
-    @include tablet {
-      width: 282px;
-      margin-bottom: 24px;
-    }
+    width: 246px;
+    margin-bottom: 24px;
   }
 }
 
@@ -886,6 +864,10 @@ body {
 
   @include tablet {
     width: 531px;
+  }
+
+  @include laptop {
+    width: 490px;
   }
 
 }
@@ -920,11 +902,11 @@ body {
       padding: 12px 14%;
 
     @include tablet {
-      padding: 12px 131.71px;
+      padding: 12px 18%;
     }
 
     @include laptop {
-      padding: 12px 40.22px;
+      padding: 12px 73.22px;
     }
 
     @include desktop {
@@ -936,11 +918,11 @@ body {
       padding: 12px 16%;
 
     @include tablet {
-      padding: 12px 119.43px;
+      padding: 12px 18%;
     }
 
     @include laptop {
-      padding: 12px 27.93px;
+      padding: 12px 58.93px;
     }
 
     @include desktop {
@@ -987,30 +969,35 @@ body {
 
 .second-block {
   width: 445px;
+  margin-top: 10px;
 
   @include tablet {
-    width: auto;
+    width: 923px;
+    margin-top: 55px;
   }
 
   @include laptop {
     display: flex;
     margin-top: 62px;
+    width: 1136px;
+    justify-content: space-between;
   }
 
   @include desktop {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0 110px;
+    width: 1196px;
   }
 }
 
 .block-text {
   @include laptop {
-    padding-top: 24px;
+    margin-top: 24px;
   }
 
   @include desktop {
-    padding-top: 61px;
+    margin-top: 61px;
   }
 }
 
@@ -1018,11 +1005,16 @@ body {
   padding: 8px;
   
   @include tablet {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    padding: 8px 20px;
   }
 
+  @include laptop {
+    padding: 8px;
+  }
+
+  @include desktop {
+    padding: 8px 12px;
+  }
 }
 
 .tariffs {
@@ -1039,11 +1031,6 @@ body {
 }
 
 .section {
-  margin-top: 8px;
   display: flex;
   justify-content: center;
-
-  @include tablet {
-    display: block;
-  }
 }
