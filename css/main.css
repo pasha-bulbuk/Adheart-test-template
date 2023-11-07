@@ -662,7 +662,7 @@ body {
   }
 }
 
-.block-img {
+.block__img {
   background: url(../img/woman.svg) top center/cover no-repeat;
   height: 426px;
   display: flex;
@@ -672,25 +672,25 @@ body {
   margin-top: 24px;
 }
 @media (min-width: 768px) {
-  .block-img {
+  .block__img {
     height: 728px;
   }
 }
 @media (min-width: 1024px) {
-  .block-img {
+  .block__img {
     width: 510px;
     height: 594px;
     margin-top: 0px;
   }
 }
 @media (min-width: 1440px) {
-  .block-img {
+  .block__img {
     width: 507px;
     height: 628px;
   }
 }
 
-.name-photo {
+.block__name-photo {
   background: rgb(255, 255, 255);
   border-radius: 59px;
   width: 85%;
@@ -703,18 +703,18 @@ body {
   margin-bottom: 6px;
 }
 @media (min-width: 768px) {
-  .name-photo {
+  .block__name-photo {
     height: 73px;
     margin-bottom: 32px;
   }
 }
 @media (min-width: 1024px) {
-  .name-photo {
+  .block__name-photo {
     margin-bottom: 16px;
   }
 }
 @media (min-width: 1440px) {
-  .name-photo {
+  .block__name-photo {
     margin-bottom: 32px;
   }
 }
@@ -732,18 +732,18 @@ body {
   }
 }
 
-.block-name {
+.block__name {
   padding: 8px 16px;
   background: rgba(106, 103, 218, 0.1);
   border-radius: 27px;
 }
 @media (min-width: 768px) {
-  .block-name {
+  .block__name {
     padding: 10px 18.33px;
   }
 }
 
-.block-like {
+.block__like {
   display: flex;
   gap: 16px;
 }
@@ -763,27 +763,27 @@ body {
   }
 }
 
-.l-text {
+.block__like-text {
   font-family: "Inter";
   font-weight: 500;
   line-height: 1.5rem;
 }
 @media (min-width: 1024px) {
-  .l-text {
+  .block__like-text {
     font-size: 1.25rem;
   }
 }
 
-.list {
+.tab__list-text {
   margin-top: 12px;
 }
 
-.list {
+.tab__list-text {
   list-style: url(../img/fire.svg);
   margin-left: 24px;
 }
 @media (min-width: 1024px) {
-  .list {
+  .tab__list-text {
     width: 453px;
   }
 }
@@ -800,11 +800,11 @@ body {
   }
 }
 
-.t-tabs {
+.tab__text {
   margin-top: 8px;
 }
 @media (min-width: 768px) {
-  .t-tabs {
+  .tab__text {
     margin-bottom: 24px;
   }
 }
@@ -907,17 +907,17 @@ body {
   }
 }
 
-.s-text {
+.tab__text {
   font-family: "Inter";
 }
 @media (min-width: 768px) {
-  .s-text {
+  .tab__text {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 @media (min-width: 1024px) {
-  .s-text {
+  .tab__text {
     font-size: 1rem;
     line-height: 1.5rem;
     letter-spacing: -0.015rem;
@@ -926,13 +926,13 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .t-text {
+  .tab__text {
     font-size: 1.125rem;
     width: 371px;
   }
 }
 @media (min-width: 1440px) {
-  .t-text {
+  .tab__text {
     width: 490px;
   }
 }

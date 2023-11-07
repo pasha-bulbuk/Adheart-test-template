@@ -708,7 +708,7 @@ body {
   }
 }
 
-.block-img {
+.block__img {
   background: url(../img/woman.svg) top center / cover no-repeat;
   height: 426px;
   display: flex;
@@ -733,7 +733,7 @@ body {
   }
 }
 
-.name-photo {
+.block__name-photo {
   background: rgba(255, 255, 255, 1);
   border-radius: 59px;
   width: 85%;
@@ -771,7 +771,7 @@ body {
   }
 }
 
-.block-name {
+.block__name {
   padding: 8px 16px;
   background: rgba(106, 103, 218, 0.1);
   border-radius: 27px;
@@ -781,7 +781,7 @@ body {
   }
 }
 
-.block-like {
+.block__like {
   display: flex;
   gap: 16px;
 }
@@ -802,7 +802,7 @@ body {
 }
 
 
-.l-text {
+.block__like-text {
   font-family: $font-family_1;
   font-weight: 500;
   line-height: 1.5rem;
@@ -812,11 +812,11 @@ body {
   }
 }
 
-.list {
+.tab__list-text {
   margin-top: 12px;
 }
 
-.list {
+.tab__list-text {
   list-style: url(../img/fire.svg);
   margin-left: 24px;
   @include laptop {
@@ -835,7 +835,7 @@ body {
   }
 }
 
-.t-tabs {
+.tab__text {
   margin-top: 8px;
 
   @include tablet {
@@ -940,7 +940,7 @@ body {
   }
 }
 
-.s-text {
+.tab__text {
   font-family: $font-family_1;
 
   @include tablet {
@@ -956,7 +956,7 @@ body {
   }
 }
 
-.t-text {
+.tab__text {
   @include laptop {
     font-size: 1.125rem;
     width: 371px;
