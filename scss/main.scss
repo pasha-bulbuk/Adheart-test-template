@@ -1033,4 +1033,456 @@ body {
 .section {
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include laptop {
+    margin-bottom: 80px;
+  }
+}
+
+.robot {
+  width: 405px;
+  height: 750px;
+  border-radius: 24px;
+  padding: 24px;
+  background: url(../img/robot.svg) center bottom / 455px auto no-repeat, #F5F5F5;
+
+  @include tablet {
+    background: url(../img/robot2.svg) center bottom / auto no-repeat, #F5F5F5;
+    height: 904px;
+    width: 875px;
+    padding: 40px;
+  }
+
+  @include laptop {
+    background: url(../img/robot2.svg) right bottom / auto no-repeat, #F5F5F5;
+    width: 1088px;
+  }
+
+  @include desktop {
+    background: url(../img/robot3.svg) right bottom / auto no-repeat, #F5F5F5;
+    width: 1198px;
+    height: 700px;
+    padding: 121px 109px;
+  }
+  
+  &__btn {
+    margin-top: 24px;
+    margin-left: -8px;
+
+      @include tablet {
+        padding: 20px 40px;
+        font-size: 18px;
+      }
+  }
+
+  &__title {
+    @include laptop {
+      width: 632px;
+    }
+
+    @include desktop {
+      width: 492px;
+    }
+  }
+
+  &__text {
+    @include laptop {
+      width: 632px;
+    }
+
+    @include desktop {
+      width: 492px;
+    }
+  }
+}
+.separation {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+
+  &__colon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__width {
+    @include laptop {
+      width: 205px;
+    }
+
+    @include desktop {
+      width: 205px;
+    }
+  }
+
+  @include tablet {
+    gap: 108px;
+  }
+
+  @include desktop {
+    gap: 58px;
+  }
+}
+
+.possibilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url(../img/background.svg) center bottom / 453px auto no-repeat, #ffffff;
+  width: 453px;
+  position: relative;
+  padding-bottom: 492px;
+
+  &__text {
+    text-align: center;
+    margin-top: 12px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include desktop {
+      margin: 12px 25%;
+    }
+  }
+
+  @include tablet {
+    width: 955px;
+    background: url(../img/background2.svg) center bottom / 955px auto no-repeat, #ffffff;
+  }
+
+  @include laptop {
+    width: 1168px;
+    background: url(../img/background2.svg) center bottom / 1168px auto no-repeat, #ffffff;
+  }
+
+  @include desktop {
+    width: 1416px;
+    background: url(../img/background3.svg) center bottom / 1416px auto no-repeat, #ffffff;
+  }
+}
+
+.circle {
+  &__name {
+    @include laptop {
+      width: 163px;
+    }
+  }
+
+  &__text {
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 0px 0px rgba(163, 163, 163, 0.10), 0px 40px 87px 0px rgba(163, 163, 163, 0.10), 0px 158px 158px 0px rgba(163, 163, 163, 0.09), 0px 356px 214px 0px rgba(163, 163, 163, 0.05), 0px 633px 253px 0px rgba(163, 163, 163, 0.01), 0px 989px 277px 0px rgba(163, 163, 163, 0.00);
+
+    &-find {
+      width: 133px;
+      padding: 43px 10px;
+      position: absolute;
+      top: 284px;
+      left: 12px;
+
+      @include tablet {
+        padding: 27px 46.5px;
+        top: 239px;
+        left: 41%;
+      }
+
+      @include laptop {
+        padding: 40px 46.5px;
+      }
+
+      @include desktop {
+        top: 318px;
+      }
+    }
+    &-money {
+      width: 100px;
+      padding: 30px 10px;
+      position: absolute;
+      right: 4px;
+      top: 158px;
+
+      @include tablet {
+        padding: 22px 44px;
+        top: 165px;
+        left: 70%;
+      }
+
+      @include desktop {
+        top: 235px;
+        left: 72%;
+      }
+    }
+    &-top {
+      width: 89px;
+      padding: 30px 17px;
+      position: absolute;
+      top: 146px;
+      left: 1px;
+
+      @include tablet {
+        padding: 22px 49.5px;
+        top: 366px;
+        left: 70%;
+      }
+
+      @include laptop {
+        padding: 38px 49.5px;
+      }
+
+      @include desktop {
+        top: 289px;
+        left: 58%;
+      }
+    }
+    &-fire {
+      width: 100px;
+      padding: 24px 8px;
+      position: absolute;
+      top: 288px;
+      left: 181px;
+
+      @include tablet {
+        padding: 22px 44px;
+        top: 165px;
+        left: 16%;
+      }
+
+      @include desktop {
+        top: 235px;
+        left: 13%;
+      }
+    }
+    &-work {
+      width: 100px;
+      padding: 34px 18px;
+      position: absolute;
+      top: 401px;
+      right: 35px;
+
+      @include tablet {
+        padding: 22px 44px;
+        top: 366px;
+        left: 16%;
+      }
+
+      @include desktop {
+        top: 286px;
+        left: 27%;
+      }
+    }
+
+  }
+}
+
+.img__size {
+  width: 24px;
+  height: 24px;
+
+  @include tablet {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+
+.search {
+  width: 420px;
+  margin: 0 7px;
+
+    &__text {
+      margin-bottom: 12px;
+
+      @include tablet {
+        margin-bottom: 32px;
+      }
+
+      @include laptop {
+        width: 480px;
+      }
+    }
+
+  @include tablet {
+    width: 955px;
+  }
+
+  @include laptop {
+    width: 1168px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    width: 1440px;
+    justify-content: space-evenly;
+  }
+
+  &__separation {
+    @include laptop {
+      width: 541px;
+    }
+  }
+}
+
+.block__find {
+  width: 181px;
+  margin-bottom: 8px;
+
+  @include tablet {
+    width: 261px;
+    margin-bottom: 16px;
+  }
+}
+
+.laptop {
+  height: 217px;
+  border-radius: 24px;
+  margin: 0px auto;
+  margin-bottom: 25px;
+  background: url(/img/laptop.svg) center center / 178px 184px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+
+  &__second {
+    display: none;
+
+    @include tablet {
+      display: block;
+      height: 405px;
+      background: url(/img/laptop.svg) center center / 292px 308px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+    }
+
+    @include laptop {
+      height: 822px;
+      width: 425px;
+      background: url(/img/laptop.svg) center center / 313px 324px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+      margin: 0;
+    }
+
+    @include desktop {
+      height: 700px;
+      width: 507px;
+      background: url(/img/laptop.svg) center center / 376px 389px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+      margin: 0;
+    }
+  }
+
+  &__first {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+
+.block__possibilities {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include tablet {
+    gap: 16px;
+  }
+
+  @include laptop {
+    align-items: flex-start;
+  }
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  border-radius: 7.8px;
+  border: 0.6px solid rgba(224, 225, 226, 1);
+
+  &__search {
+    background: url(../img/search.svg) center / auto no-repeat,;
+    
+    @include tablet {
+      background-size: 18px;
+    }
+
+  }
+
+  &__filter {
+    background: url(../img/filter.svg) center / auto no-repeat,;
+
+    @include tablet {
+      background-size: 18px;
+    } 
+  }
+
+  &__download {
+    background: url(../img/download.svg) center / auto no-repeat,;
+
+    @include tablet {
+      background-size: 18px;
+    }
+  }
+
+  &__collections {
+    background: url(../img/heart2.svg) center / auto no-repeat,;
+
+    @include tablet {
+      background-size: 18px;
+    }
+  }
+
+  &__stats {
+    background: url(../img/stats.svg) center / auto no-repeat,;
+
+    @include tablet {
+      background-size: 18px;
+    }
+  }
+
+  @include tablet {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+  }
+
+}
+
+.find {
+  &__block {
+    width: 90%;
+
+    @include tablet {
+      width: 550px;
+    }
+
+  }
+
+  &__title {
+    font-family: $font-family_1;
+    color: $color-text-primary;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 1.25em;
+    }
+  }
+
+  &__text {
+    color: rgba(122, 122, 122, 1);
+    line-height: 25px;
+
+    @include tablet {
+      font-size: 1.125em;
+      line-height: 28px;
+    }
+  }
 }
