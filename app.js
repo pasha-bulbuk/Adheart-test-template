@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var choiceList = document.querySelectorAll("ul.choice li");
+
+  choiceList.forEach(function(choice) {
+    choice.addEventListener("click", function() {
+      var choice_id = this.getAttribute("data-choice");
+
+      choiceList.forEach(function(choice) {
+        choice.classList.remove("current");
+      });
+
+      this.classList.add("current");
+      document.getElementById(choice_id).classList.add("current");
+    });
+  });
+});
+
+
+
+

@@ -1352,7 +1352,7 @@ body {
   border-radius: 24px;
   margin: 0px auto;
   margin-bottom: 25px;
-  background: url(/img/laptop.svg) center center / 178px 184px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+  background: url(../img/laptop.svg) center center / 178px 184px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
 
   &__second {
     display: none;
@@ -1360,20 +1360,20 @@ body {
     @include tablet {
       display: block;
       height: 405px;
-      background: url(/img/laptop.svg) center center / 292px 308px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+      background: url(../img/laptop.svg) center center / 292px 308px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
     }
 
     @include laptop {
       height: 822px;
       width: 425px;
-      background: url(/img/laptop.svg) center center / 313px 324px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+      background: url(../img/laptop.svg) center center / 313px 324px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
       margin: 0;
     }
 
     @include desktop {
       height: 700px;
       width: 507px;
-      background: url(/img/laptop.svg) center center / 376px 389px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
+      background: url(../img/laptop.svg) center center / 376px 389px no-repeat, radial-gradient(55.95% 70.68% at 73.76% 95.59%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.29% 79.88% at 51.09% 86.4%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(30.14% 71.61% at 68.54% 94.66%, rgba(106, 103, 218, 0.15) 0%, rgba(0, 0, 0, 0.063) 100%), radial-gradient(29.17% 69.32% at 31.85% 96.96%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(127.99% 74.99% at 49.9% 91.29%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(21, 21, 31);
       margin: 0;
     }
   }
@@ -1486,3 +1486,499 @@ body {
     }
   }
 }
+
+
+.rocket {
+  height: 1618px;
+  width: 405px;
+  padding: 24px;
+  background: url(../img/rocket.svg) center center / 500px 400px no-repeat, radial-gradient(139.97% 10.24% at 75.49% 43.42%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(118.89% 14.22% at 69.36% 45.86%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(113.09% 19.99% at 58.36% 46.82%, rgba(97, 71, 255, 0.79) 0%, rgba(0, 0, 0, 0.34) 100%), radial-gradient(38.86% 4.42% at 78.97% 51.45%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(14, 14, 14);
+  border-radius: 24px;
+
+  &__name {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px ;
+  }
+
+  &__text {
+    color: white;
+    line-height: 20px;
+  }
+
+  &__offer {
+    margin-bottom: 255px;
+    width: 220px;
+
+    @include tablet {
+      width: 538px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__start {
+    padding: 15.5px 42%;
+    margin: 11px auto 16px auto;
+
+    @include tablet {
+      padding: 15.5px 41px;
+    }
+
+    @include laptop {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text-sec {
+    margin-left: 0;
+
+    @include tablet {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__try {
+    padding: 15.5px 16%;
+
+    @include tablet {
+      padding: 15.5px 36px;
+    }
+
+    @include desktop {
+      position: absolute;
+      right: 80px;
+      bottom: 200px;
+    }
+  }
+
+  @include tablet {
+    width: 908px;
+    background: url(../img/rocket.svg) bottom right / 429px 429px no-repeat, radial-gradient(31.11% 55.28% at 82.27% 71.89%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.44% 101.44% at 77.93% 64.84%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(45.68% 111.54% at 86.51% 54.73%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(63.17% 122.78% at 86.83% 43.49%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.314) 100%), radial-gradient(14.2% 33.73% at 78.57% 59.3%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(14, 14, 14);
+    padding: 30px;
+    height: 1242px;
+  }
+
+  @include laptop {
+    padding: 40px;
+    width: 1088px;
+    background: url(../img/rocket.svg) top right / 580px 780px no-repeat, radial-gradient(31.11% 55.28% at 82.27% 71.89%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.44% 101.44% at 77.93% 64.84%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(45.68% 111.54% at 86.51% 54.73%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(63.17% 122.78% at 86.83% 43.49%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.314) 100%), radial-gradient(14.2% 33.73% at 78.57% 59.3%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(14, 14, 14);
+    height: 1066px;
+  }
+
+  @include desktop {
+    width: 1256px;
+    padding: 80px;
+    background: url(../img/rocket.svg) top right / 801px 950px no-repeat, radial-gradient(31.11% 55.28% at 82.27% 71.89%, rgba(255, 235, 51, 0.52) 0%, rgba(0, 0, 0, 0.224) 100%), radial-gradient(42.44% 101.44% at 77.93% 64.84%, rgba(255, 134, 66, 0.66) 0%, rgba(0, 0, 0, 0.282) 100%), radial-gradient(45.68% 111.54% at 86.51% 54.73%, rgba(106, 103, 218, 0.2) 0%, rgba(0, 0, 0, 0.086) 100%), radial-gradient(63.17% 122.78% at 86.83% 43.49%, rgba(97, 71, 255, 0.73) 0%, rgba(0, 0, 0, 0.314) 100%), radial-gradient(14.2% 33.73% at 78.57% 59.3%, rgb(255, 134, 66) 0%, rgba(0, 0, 0, 0.43) 100%), rgb(14, 14, 14);
+    position: relative;
+    height: 937px;
+  }
+}
+
+.four-tariffs {
+  padding: 8px 16px;
+  background: rgba(245, 227, 65, 0.1);
+  border-radius: 27px;
+  width: 72px;
+
+  &__name {
+    color: rgba(255, 239, 98, 1);
+    font-family: $font-family_1;
+
+    @include tablet {
+      font-size: 1.25em;
+    }
+  }
+
+  @include tablet {
+    width: 89px;
+  }
+}
+
+.choice {
+
+  &__block {
+    height: 72px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding: 16px 0 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    @include tablet {
+      border-radius: 21px;
+      width: 312px;
+      height: 88px;
+    }
+  }
+
+  &__circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.16)
+  }
+
+  &__duration {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    color:rgba(224, 225, 226, 1);
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(255, 255, 255, 1);
+
+  }
+
+  &__separation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__sale {
+    width: 40px;
+
+    @include tablet {
+      width: 55px;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  @include laptop {
+    justify-content: left;
+    margin-right: 81px;
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    margin-right: 329px;
+  }
+}
+
+.current {
+  .choice__circle {
+    background: rgba(255, 255, 255, 1);
+    border: 5px solid rgba(106, 103, 218, 1);
+    width: 14px;
+    height: 14px;
+  }
+
+  .choice__block {
+    background-color: rgba(106, 103, 218, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    @include tablet {
+      width: 310px;
+    }
+  }
+}
+
+.or {
+  display: flex;
+  align-items: center;
+
+  &__line {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &__text {
+    margin: 0 20px;
+
+    @include laptop {
+      width: 40px;
+    }
+  }
+
+  @include laptop {
+    margin-bottom: 32px;
+  }
+}
+
+.lock {
+  margin-bottom: 28px;
+
+  &__block {
+    list-style: url(../img/lock.svg);
+  }
+
+  &__box {
+    @include tablet {
+      width: 379px;
+      height: 86px;
+      border-radius: 21px;
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    @include laptop {
+      width: 271px;
+    }
+
+    @include desktop {
+      width: 389px;
+      height: 76px;
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  @include laptop {
+    flex-direction: row;
+  }
+
+  @include laptop {
+    margin-bottom: 32px;
+  }
+}
+
+.demo {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__free {
+    display: none;
+
+    @include tablet {
+      display: block;
+      width: 107px;
+      height: 24px;
+    }
+  }
+}
+
+.reviews {
+  width: 433px;
+  position: relative;
+
+  &__section {
+    margin-bottom: 0;
+  }
+  
+  &__name {
+    width: 54px;
+    margin-bottom: 12px;
+
+    @include tablet {
+      width: 82px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 60px;
+  }
+
+  &__box {
+    padding: 23px;
+    border-radius: 24px;
+    border: 1px solid rgba(224, 225, 226, 1);
+  }
+
+  &__box-wrapper::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &__box-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    width: 310px;
+
+
+    .reviews__box {
+      min-width: 250px;
+
+      @include tablet {
+        min-width: 405px;
+      }
+
+      @include laptop {
+        min-width: 332px;
+      }
+    }
+
+    @include tablet {
+      width: 748px;
+    }
+
+    @include laptop {
+      width: 1006px;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__margin {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    @include tablet {
+      width: 582px;
+    }
+
+    @include desktop {
+      width: 394px;
+    }
+  }
+
+
+  @include tablet {
+    width: 968px;
+  }
+
+  @include laptop {
+    width: 1168px;
+  }
+
+  @include desktop {
+    width: 1224px;
+    display: flex;
+  }
+
+}
+.arrow-right {
+  @include desktop {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    border: 1px solid rgba(201, 203, 206, 1);
+    background: url(../img/right.svg) center no-repeat white;
+    position: absolute;
+    right: 40px;
+    top: 40%;
+    box-shadow: 0px 12px 31px 0px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+}
+
+.photo {
+  display: flex;
+  position: relative;
+
+  &__block {
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  &__shift {
+    left: 30px;
+  }
+
+  &__shift-first {
+    left: 60px;
+  }
+
+  &__shift-second {
+    left: 90px;
+  }
+
+  &__shift-third {
+    left: 120px;
+  }
+
+  &__shift-fourth {
+    top: 3px;
+  }
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+
+  &__text {
+    display: none;
+    margin: 0;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__text-black {
+    color: black;
+    font-weight: 600;
+  }
+
+  &__five {
+    display: flex;
+      gap: 2px;
+    @include tablet {
+      align-items: center;
+    }
+
+    &-block {
+      @include tablet {
+        margin-left: 14px;
+      }
+    }
+  }
+
+  &__one {
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    @include tablet {
+      margin: 0 8px;
+    }
+  }
+
+
+  @include tablet {
+    width: 100%;
+    height: 150px;
+    background: rgba(249, 249, 249, 1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include laptop {
+    flex-direction: row;
+  }
+}
+
